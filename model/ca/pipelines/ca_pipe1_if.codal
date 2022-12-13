@@ -43,6 +43,8 @@ event fe : pipeline(pipe.IF)
         // If branch, the next PC is not the previous pc + 4, but the calculate branch or jump address
         if (s_me_take_branch) s_if_nextpc = r_ex_target_address;
         else s_if_nextpc = r_pc;
+        
+        
 
         // Instruction request
         cache_hprot = pma_hprot(s_if_nextpc[31 .. 2] :: (uint2)0, 0u);
@@ -57,11 +59,15 @@ event if_output : pipeline(pipe.IF)
 {
     semantics
     {
-        if(!s_me_mem_busy) r_if_pc = s_if_nextpc;
-
-        if (s_me_take_branch) r_pc = s_if_nextpc + INSTR_SIZE;
-        else if (s_me_take_branch) r_pc = s_if_nextpc;
-        else if (!s_me_mem_busy)  r_pc = s_if_nextpc + INSTR_SIZE;
+        
+    
+        //unsure how to keep the pc from updating 
+        if((!s_id_loadhaz && !s_me_stall) || s_me_take_branch){
+            r_pc = s_if_nextpc + INSTR_SIZE;
+            r_if_pc = s_if_nextpc;
+        }else {
+            r_pc = s_if_nextpc+4;
+        }
 
         r_id_icache_stall = s_id_icache_stall;
     };

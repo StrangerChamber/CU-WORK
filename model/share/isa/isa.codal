@@ -46,7 +46,7 @@
 // a complete set of RISCV instructions must be defined.  We us the set operator to combine the separate RISCV
 // instructions into a single set, isa
 set isa = i_rtype_alu,
-    i_shift_imm,
+    i_rtype_shift,
     i_itype_alu,
     i_itype_loads,
     i_stype_store,
@@ -141,9 +141,8 @@ DEF_OPC(srl, "srl", RTYPE_SRL)
 DEF_OPC(sra, "sra", RTYPE_SRA)
 DEF_OPC(or, "or", RTYPE_OR)
 DEF_OPC(and, "and", RTYPE_AND)
-DEF_OPC(mask, "mask", RTYPE_MASK)
 
-set opc_rtype_alu = opc_add, opc_sub, opc_sll, opc_slt, opc_sltu, opc_xor, opc_srl, opc_sra, opc_or, opc_and, opc_mask;
+set opc_rtype_alu = opc_add, opc_sub, opc_sll, opc_slt, opc_sltu, opc_xor, opc_srl, opc_sra, opc_or, opc_and;
 
 element i_rtype_alu           // define the instruction for the rtype arithmetic opcodes
 {
@@ -161,6 +160,9 @@ element i_rtype_alu           // define the instruction for the rtype arithmetic
     assembly { opc rd ", " rs1 ", " rs2};
 
     // The instructions binary (or machine code format)
+    // OPCODE is a function that equates to opc[6..0], lower 7-bits
+    // FUNC3 is a function that equates to opc[9..7], the next 3-bits of a larger opcode instruction
+    // FUNC7 is a function that equates to opc[16..10], the next 7-bits of a larger opcode instruction
     binary { FUNC7(opc) rs2 rs1 FUNC3(opc) rd OPCODE(opc) };
 
     // The instruction's behavior is described using a subset of the ANSI C language.  Instances have values returned for
@@ -170,6 +172,7 @@ element i_rtype_alu           // define the instruction for the rtype arithmetic
         uint32 src1, src2, result;
 
         // read source operands
+        // the function to read the register file is rf_xpr_read() and the input argument is the register location
         src1 = rf_xpr_read(rs1);
         src2 = rf_xpr_read(rs2);
 
@@ -212,9 +215,6 @@ element i_rtype_alu           // define the instruction for the rtype arithmetic
             case RTYPE_AND:
                 result = src1 & src2;
                 break;
-            case RTYPE_MASK:
-                result = ~src1 & src2;
-                break;
             default:
                 result = 0;
 //                eprintf("Default case: %d", opc);
@@ -222,21 +222,22 @@ element i_rtype_alu           // define the instruction for the rtype arithmetic
         }
 
         // store the result into the destination register
+        // the function to write the register file is rf_xpr_write() and the input argument is the register location
         rf_xpr_write(result, rd);
     };
 };
 
-// Combine the immediate shift instructions that are specialized itype set of instructions
+// Combine the immediate shift instructions that are rtype instructions
 
-DEF_OPC(slli, "slli", IMM_SHIFT_SLLI)
-DEF_OPC(srli, "srli", IMM_SHIFT_SRLI)
-DEF_OPC(srai, "srai", IMM_SHIFT_SRAI)
+DEF_OPC(slli, "slli", RTYPE_SLLI)
+DEF_OPC(srli, "srli", RTYPE_SRLI)
+DEF_OPC(srai, "srai", RTYPE_SRAI)
 
-set opc_shift_imm = opc_slli, opc_srli, opc_srai;
+set opc_rtype_shift = opc_slli, opc_srli, opc_srai;
 
-element i_shift_imm                     // define the instruction for the shift immediate opcodes
+element i_rtype_shift                     // define the instruction for the rtype immediate shift opcodes
 {
-    use opc_shift_imm as opc;
+    use opc_rtype_shift as opc;
     use xpr_all as rs1, rd;
     use uimm5 as imm;
     assembly { opc rd ", " rs1 ", " imm};
@@ -250,13 +251,13 @@ element i_shift_imm                     // define the instruction for the shift 
         immediate = (uint5) imm;
 
         switch (opc) {
-            case IMM_SHIFT_SLLI:
+            case RTYPE_SLLI:
                 result = (uint32)src1 << immediate;
                 break;
-            case IMM_SHIFT_SRLI:
+            case RTYPE_SRLI:
                 result = (uint32)src1 >> immediate;
                 break;
-            case IMM_SHIFT_SRAI:
+            case RTYPE_SRAI:
                 result = ((int32) src1) >> immediate;
                 break;
             default:
@@ -524,6 +525,7 @@ element i_btype_branches
         src1 = rf_xpr_read(rs1);
         src2 = rf_xpr_read(rs2);
 
+//        target_address = read_pc() + (int32)imm - RISCV_INSTR_SIZE;
         target_address = r_pc + (int32)imm - RISCV_INSTR_SIZE;
 
 //
@@ -987,7 +989,7 @@ emulation e_movi32
 
     use i_utype_ops as i_lui0, i_lui1;
     use i_rtype_alu as i_or;
-    use i_shift_imm as i_srli;
+    use i_rtype_shift as i_srli;
 
     unsigned attribute bit[32] imm32;
 
@@ -1023,7 +1025,7 @@ emulation e_movi32
 //
 //    use i_utype_ops as i_lui0, i_lui1;
 //    use i_rtype_alu as i_or;
-//    use i_imm_shift as i_srli;
+//    use i_rtype_shift as i_srli;
 //    use i_itype_jlreg as i_jal_reg;
 //
 //    unsigned attribute bit[32] imm32;

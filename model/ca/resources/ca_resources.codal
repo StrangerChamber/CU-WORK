@@ -63,7 +63,7 @@ signal bit[WORD_W]          s_id_rf_src2;               // value of src2 from re
 // ALU Operation Control
 signal bit[ALUOP_W]         s_id_aluop;                 // ALU opcode
 signal bit[BOOLEAN_BIT]        s_id_halt;                  // Control bit to halt processor simulation
-
+signal bit[BOOLEAN_BIT]         s_id_loadhaz;
 
 // Immediate operand generation resources
 signal bit[IMM_GEN_SEL_W]   s_id_imm_gen_sel;           // select the type of immediate to pass to execute stage
@@ -74,6 +74,16 @@ signal bit[WORD_W]          s_id_imm_btype;
 signal bit[WORD_W]          s_id_imm_utype;
 signal bit[WORD_W]          s_id_imm_jtype;
 
+//data forwarding variables
+
+signal bit[RFF_W]           s_id_fwd1; //reg file output signal var
+signal bit[RFF_W]           s_id_fwd2; //rfffwd selector output for src2
+
+signal bit[WORD_W]           s_id_src1_val; //output of mux 1 from reg file output
+signal bit[WORD_W]           s_id_src2_val; //ouput of mux 2 from mem/wb forwarded value
+
+register bit[RF_XPR_W]         r_id_rs1        { pipeline = pipe.ID; };
+register bit[RF_XPR_W]         r_id_rs2        { pipeline = pipe.ID; }; 
 
 // Singals/registers to preserve instruction durin a pipeline stall
 signal bit[BOOLEAN_BIT]     s_id_icache_stall;
@@ -95,20 +105,32 @@ signal bit[BOOLEAN_BIT]        s_id_branch_inst;           // bit used to notify
 signal bit[BOOLEAN_BIT]        s_id_jump_inst;             // bit used to notify a jump instruction
 
 
-// ID pipeline register
-                                                   { pipeline = pipe.ID; };    // Program Counter
-                                                   { pipeline = pipe.ID; };    // rd (write) register number
-                                                                                  // register file output for src1, rs1
-                                                                                  // register file output for src2, rs2
-                                                                                  // RF write? r_id_regwrite
-                                                                                  // immediate value for src2
 
-register bit[ALUOP_W]   r_id_aluop               { pipeline = pipe.ID; };    // ALU opcode
-register bit[ALU_SRC1_SEL_W] r_id_src1_sl        { pipeline = pipe.ID; };    // ALU src1 select lines for mux
-register bit[ALU_SRC2_SEL_W] r_id_src2_sl        { pipeline = pipe.ID; };    // ALU src2 select lines for mux
+//signals and regs for jump and branch stage
+
+signal bit[TWO_BIT]            s_id_branchop;
+signal bit[BOOLEAN_BIT]            s_id_rfwtsel;
+
+register bit[TWO_BIT]           r_id_branchop        { pipeline = pipe.ID; };
+register bit[BOOLEAN_BIT]           r_id_rfwsel          { pipeline = pipe.ID; };
+
+
+
+// ID pipeline register
+register bit[ADDR_W] r_id_pc                             { pipeline = pipe.ID; };    // Program Counter
+register bit[RF_XPR_W] r_id_rd                           { pipeline = pipe.ID; };    // rd (write) register number
+register bit[WORD_W] r_id_rf_src1                        { pipeline = pipe.ID; };    // register file output for src1, rs1
+register bit[WORD_W] r_id_rf_src2                        { pipeline = pipe.ID; };    // register file output for src2, rs2
+register bit[BOOLEAN_BIT] r_id_regwrite                  { pipeline = pipe.ID; };    // RF write? r_id_regwrite
+register bit[WORD_W] r_id_src2_imm                       { pipeline = pipe.ID; };    // immediate value for src2
+
+
+register bit[ALUOP_W]   r_id_aluop                  { pipeline = pipe.ID; };    // ALU opcode
+register bit[ALU_SRC1_SEL_W] r_id_src1_sl           { pipeline = pipe.ID; };    // ALU src1 select lines for mux
+register bit[ALU_SRC2_SEL_W] r_id_src2_sl           { pipeline = pipe.ID; };    // ALU src2 select lines for mux
 register bit[BOOLEAN_BIT]  r_id_branch_inst         { pipeline = pipe.ID; };    // If true, conditional branch instruction
 register bit[BOOLEAN_BIT]  r_id_jump_inst           { pipeline = pipe.ID; };    // If true, jump instruction
-register bit[MEM_OPCODE_W] r_id_mem_ops          { pipeline = pipe.ID; };    // Opcode for Loads and Store operations (NOP = no load or store)
+register bit[MEM_OPCODE_W] r_id_mem_ops             { pipeline = pipe.ID; };    // Opcode for Loads and Store operations (NOP = no load or store)
 register bit[BOOLEAN_BIT]  r_id_memread             { pipeline = pipe.ID; };    // If true, it is a Load operation
 
 
@@ -120,41 +142,67 @@ register bit[BOOLEAN_BIT]  r_id_halt                { pipeline = pipe.ID; };    
 // Execute stage
 // -------------------------------------------------------------------------------------------------
 
+
+//data forwarding variables
+
+signal bit [DHF_W] s_ex_fwd1;
+signal bit [DHF_W] s_ex_fwd2;
+
+signal bit [WORD_W] s_ex_fwd1_val;
+signal bit [WORD_W] s_ex_fwd2_val;
+
 // ALU signals
-                                                                                  // src1 operand into ALU
-                                                                                  // src2 operand into ALU
-                                                                                  // result of ALU operation
+signal bit [WORD_W] s_src1_operand     ;                            // src1 operand into ALU
+signal bit [WORD_W] s_src2_operand      ;                                // src2 operand into ALU
+signal bit [WORD_W]  s_ex_alu_result     ;                                 // result of ALU operation
+
+
+//signals added to implement branches and jumps
+signal bit [ADDR_W] s_ex_target_address1;
+signal bit [ADDR_W] s_ex_target_address2;
+signal bit [ADDR_W] s_ex_pcplus4;
+signal bit [BOOLEAN_BIT] s_ex_zero;
+signal bit [WORD_W] s_ex_alu_mux_result;
+signal bit [WORD_W] s_ex_encode_data;
+signal bit [ADDR_W] s_ex_address;
+signal bit [TWO_BIT] s_ex_mem_size;
+
+register bit[TWO_BIT] r_ex_branchop         { pipeline = pipe.EX; };
 
 
 // EX pipeline register
-                                                                                  // Data result from ALU
+register bit [WORD_W] r_ex_memdat               { pipeline = pipe.EX; };
+register bit [BOOLEAN_BIT] r_ex_zero            { pipeline = pipe.EX; };    //zero bit used for branching
+register bit [WORD_W] r_ex_alu_result           { pipeline = pipe.EX; };    // Data result from ALU
 register bit[RF_XPR_W] r_ex_rd                  { pipeline = pipe.EX; };    // rd / write register
-register bit[BOOLEAN_BIT] r_ex_regwrite            { pipeline = pipe.EX; };    // Does the current instruction wrt to RF
-register bit[BOOLEAN_BIT]  r_ex_branch_inst        { pipeline = pipe.EX; };    // If true, conditional branch instruction
-register bit[BOOLEAN_BIT]  r_ex_jump_inst          { pipeline = pipe.EX; };    // If true, jump instruction
+register bit[BOOLEAN_BIT] r_ex_regwrite         { pipeline = pipe.EX; };    // Does the current instruction wrt to RF
+register bit[BOOLEAN_BIT]  r_ex_branch_inst     { pipeline = pipe.EX; };    // If true, conditional branch instruction
+register bit[BOOLEAN_BIT]  r_ex_jump_inst       { pipeline = pipe.EX; };    // If true, jump instruction
 register bit[MEM_OPCODE_W] r_ex_mem_ops         { pipeline = pipe.EX; };    // Opcode for Loads and Store operations (NOP = no load or store)
-register bit[BOOLEAN_BIT]  r_ex_memread            { pipeline = pipe.EX; };    // If true, it is a Load operation
-register bit[ADDR_W] r_ex_target_address         { pipeline = pipe.EX; };    // Address to branch or jump to if required
-
+register bit[BOOLEAN_BIT]  r_ex_memread         { pipeline = pipe.EX; };    // If true, it is a Load operation
+register bit[ADDR_W] r_ex_target_address        { pipeline = pipe.EX; };    // Address to branch or jump to if required
+register bit[TWO_BIT] r_ex_mem_size             { pipeline = pipe.EX; };
 
 // -------------------------------------------------------------------------------------------------
 // Memory stage
 // -------------------------------------------------------------------------------------------------
 signal bit[BOOLEAN_BIT] s_me_take_branch;                                        //Informs the pipeline in a branch or jump is occuring
 signal bit[BOOLEAN_BIT]   s_me_mem_busy;                                         // Memory bus is busy
+signal bit[WORD_W] s_me_memread_result;
+signal bit[BOOLEAN_BIT] s_me_stall;
 
 
 // MEM pipeline register
-                                                        // ALU result from Memory stage
-                                                        // Destination, rd, register index
-                                                        // Register Write (regwrite)
-
-
+register bit [WORD_W]   r_mem_data_result             { pipeline = pipe.MEM; };            // ALU result from Memory stage
+register bit [RF_XPR_W]   r_mem_rd                       {pipeline = pipe.MEM; };                  // Destination, rd, register index
+register bit [BOOLEAN_BIT]   r_mem_regwrite                 { pipeline = pipe.MEM; };                 // Register Write (regwrite)
+register bit [BOOLEAN_BIT]  r_mem_memread              {pipeline = pipe.MEM;};
+register bit [WORD_W]  r_mem_memdat              {pipeline = pipe.MEM;};
 // -------------------------------------------------------------------------------------------------
 // Writeback stage
 // -------------------------------------------------------------------------------------------------
 
-
+signal bit [WORD_W] s_wb_memread_result;
 
 
 // -------------------------------------------------------------------------------------------------

@@ -1,0 +1,12 @@
+-- Installing: /home/project/cu_riscv32i_cycle_accurate/work/ia/llvm/install/bin/llvm-objdump
+-- Installing: /home/project/cu_riscv32i_cycle_accurate/work/ia/llvm/install/lib/libLLVMCodasipCustomModules.a
+-- Installing: /home/project/cu_riscv32i_cycle_accurate/work/ia/llvm/install/lib/libLLVMCodasipGenAsmParser.a
+-- Installing: /home/project/cu_riscv32i_cycle_accurate/work/ia/llvm/install/lib/libLLVMCodasipGenAsmPrinter.a
+-- Installing: /home/project/cu_riscv32i_cycle_accurate/work/ia/llvm/install/lib/libLLVMCodasipGenCodeGen.a
+-- Installing: /home/project/cu_riscv32i_cycle_accurate/work/ia/llvm/install/lib/libLLVMCodasipGenDesc.a
+-- Installing: /home/project/cu_riscv32i_cycle_accurate/work/ia/llvm/install/lib/libLLVMCodasipGenDisassembler.a
+-- Installing: /home/project/cu_riscv32i_cycle_accurate/work/ia/llvm/install/lib/libLLVMCodasipGenInfo.a
+-- Installing: /home/project/cu_riscv32i_cycle_accurate/work/ia/llvm/install/bin/llvm-mc
+-- Installing: /home/project/cu_riscv32i_cycle_accurate/work/ia/llvm/install/bin/llc
+-- Installing: /home/project/cu_riscv32i_cycle_accurate/work/ia/llvm/install/lib/libLLVMgold.so.9
+-- Installing: /home/project/cu_riscv32i_cycle_accurate/work/ia/llvm/install/lib/libLLVMgold.so

@@ -1,0 +1,2241 @@
+i_btype_branches__opc_beq__x_0__x_0__relative_addr12__
+t14: ch = ret t17, model/share/isa/isa.codal:1526:1
+    t17: ch = jump t0, t16, Constant:i1<-1>, model/ia/other/ia_utils.codal:147:6 @[ model/share/isa/isa.codal:562:9 @[ model/share/isa/isa.codal:1525:5 ] ]
+        t0: ch = EntryToken
+        t16: i32 = add t15, Constant:i32<-4>, model/share/isa/isa.codal:529:149 @[ model/share/isa/isa.codal:1525:5 ]
+            t15: i32 = add get_pc:i32, t6, model/share/isa/isa.codal:529:74 @[ model/share/isa/isa.codal:1525:5 ]
+                t18: i32 = get_pc, model/share/isa/isa.codal:529:69 @[ model/share/isa/isa.codal:1525:5 ]
+                t6: i32 = immop_read Constant:i32<0>, Constant:i1<-1>, Constant:i32<13>, Constant:i32<1>, Constant:i32<0>, model/share/isa/isa.codal:983:21 @[ model/share/isa/isa.codal:3722:94 @[ model/share/isa/isa.codal:1524:18 ] ]
+                    t2: i32 = Constant<0>
+                    t3: i1 = Constant<-1>
+                    t4: i32 = Constant<13>
+                    t5: i32 = Constant<1>
+                    t2: i32 = Constant<0>
+            t9: i32 = Constant<-4>
+        t3: i1 = Constant<-1>
+
+i_btype_branches__opc_beq__x_0__xpr_general__relative_addr12__
+t18: ch = ret t21, model/share/isa/isa.codal:1537:1
+    t21: ch = jump t0, t20, t8, model/ia/other/ia_utils.codal:147:6 @[ model/share/isa/isa.codal:562:9 @[ model/share/isa/isa.codal:1536:5 ] ]
+        t0: ch = EntryToken
+        t20: i32 = add t19, Constant:i32<-4>, model/share/isa/isa.codal:529:149 @[ model/share/isa/isa.codal:1536:5 ]
+            t19: i32 = add get_pc:i32, t14, model/share/isa/isa.codal:529:74 @[ model/share/isa/isa.codal:1536:5 ]
+                t22: i32 = get_pc, model/share/isa/isa.codal:529:69 @[ model/share/isa/isa.codal:1536:5 ]
+                t14: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<13>, Constant:i32<1>, Constant:i32<0>, model/share/isa/isa.codal:983:21 @[ model/share/isa/isa.codal:3722:94 @[ model/share/isa/isa.codal:1535:18 ] ]
+                    t2: i32 = Constant<1>
+                    t12: i1 = Constant<-1>
+                    t13: i32 = Constant<13>
+                    t2: i32 = Constant<1>
+                    t3: i32 = Constant<0>
+            t9: i32 = Constant<-4>
+        t8: i1 = setcc t23, Constant:i32<0>, seteq:ch, model/share/isa/isa.codal:538:119 @[ model/share/isa/isa.codal:1536:5 ]
+            t23: i32 = regop_read Constant:i32<0>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:526:56 @[ model/share/isa/isa.codal:1536:5 ] ]
+                t3: i32 = Constant<0>
+            t3: i32 = Constant<0>
+            t7: ch = seteq
+
+i_btype_branches__opc_beq__xpr_general__x_0__relative_addr12__
+t18: ch = ret t21, model/share/isa/isa.codal:1548:1
+    t21: ch = jump t0, t20, t8, model/ia/other/ia_utils.codal:147:6 @[ model/share/isa/isa.codal:562:9 @[ model/share/isa/isa.codal:1547:5 ] ]
+        t0: ch = EntryToken
+        t20: i32 = add t19, Constant:i32<-4>, model/share/isa/isa.codal:529:149 @[ model/share/isa/isa.codal:1547:5 ]
+            t19: i32 = add get_pc:i32, t14, model/share/isa/isa.codal:529:74 @[ model/share/isa/isa.codal:1547:5 ]
+                t22: i32 = get_pc, model/share/isa/isa.codal:529:69 @[ model/share/isa/isa.codal:1547:5 ]
+                t14: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<13>, Constant:i32<1>, Constant:i32<0>, model/share/isa/isa.codal:983:21 @[ model/share/isa/isa.codal:3722:94 @[ model/share/isa/isa.codal:1546:18 ] ]
+                    t2: i32 = Constant<1>
+                    t12: i1 = Constant<-1>
+                    t13: i32 = Constant<13>
+                    t2: i32 = Constant<1>
+                    t3: i32 = Constant<0>
+            t9: i32 = Constant<-4>
+        t8: i1 = setcc t23, Constant:i32<0>, seteq:ch, model/share/isa/isa.codal:538:119 @[ model/share/isa/isa.codal:1547:5 ]
+            t23: i32 = regop_read Constant:i32<0>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:525:56 @[ model/share/isa/isa.codal:1547:5 ] ]
+                t3: i32 = Constant<0>
+            t3: i32 = Constant<0>
+            t7: ch = seteq
+
+i_btype_branches__opc_beq__xpr_general__xpr_general__relative_addr12__
+t20: ch = ret t23, model/share/isa/isa.codal:1560:1
+    t23: ch = jump t0, t22, t9, model/ia/other/ia_utils.codal:147:6 @[ model/share/isa/isa.codal:562:9 @[ model/share/isa/isa.codal:1559:5 ] ]
+        t0: ch = EntryToken
+        t22: i32 = add t21, Constant:i32<-4>, model/share/isa/isa.codal:529:149 @[ model/share/isa/isa.codal:1559:5 ]
+            t21: i32 = add get_pc:i32, t16, model/share/isa/isa.codal:529:74 @[ model/share/isa/isa.codal:1559:5 ]
+                t24: i32 = get_pc, model/share/isa/isa.codal:529:69 @[ model/share/isa/isa.codal:1559:5 ]
+                t16: i32 = immop_read Constant:i32<2>, Constant:i1<-1>, Constant:i32<13>, Constant:i32<1>, Constant:i32<0>, model/share/isa/isa.codal:983:21 @[ model/share/isa/isa.codal:3722:94 @[ model/share/isa/isa.codal:1558:18 ] ]
+                    t13: i32 = Constant<2>
+                    t14: i1 = Constant<-1>
+                    t15: i32 = Constant<13>
+                    t2: i32 = Constant<1>
+                    t3: i32 = Constant<0>
+            t10: i32 = Constant<-4>
+        t9: i1 = setcc t25, t26, seteq:ch, model/share/isa/isa.codal:538:119 @[ model/share/isa/isa.codal:1559:5 ]
+            t25: i32 = regop_read Constant:i32<0>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:525:56 @[ model/share/isa/isa.codal:1559:5 ] ]
+                t3: i32 = Constant<0>
+            t26: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:526:56 @[ model/share/isa/isa.codal:1559:5 ] ]
+                t2: i32 = Constant<1>
+            t8: ch = seteq
+
+i_btype_branches__opc_bge__x_0__x_0__relative_addr12__
+t14: ch = ret t17, model/share/isa/isa.codal:1570:1
+    t17: ch = jump t0, t16, Constant:i1<-1>, model/ia/other/ia_utils.codal:147:6 @[ model/share/isa/isa.codal:562:9 @[ model/share/isa/isa.codal:1569:5 ] ]
+        t0: ch = EntryToken
+        t16: i32 = add t15, Constant:i32<-4>, model/share/isa/isa.codal:529:149 @[ model/share/isa/isa.codal:1569:5 ]
+            t15: i32 = add get_pc:i32, t6, model/share/isa/isa.codal:529:74 @[ model/share/isa/isa.codal:1569:5 ]
+                t18: i32 = get_pc, model/share/isa/isa.codal:529:69 @[ model/share/isa/isa.codal:1569:5 ]
+                t6: i32 = immop_read Constant:i32<0>, Constant:i1<-1>, Constant:i32<13>, Constant:i32<1>, Constant:i32<0>, model/share/isa/isa.codal:983:21 @[ model/share/isa/isa.codal:3722:94 @[ model/share/isa/isa.codal:1568:18 ] ]
+                    t2: i32 = Constant<0>
+                    t3: i1 = Constant<-1>
+                    t4: i32 = Constant<13>
+                    t5: i32 = Constant<1>
+                    t2: i32 = Constant<0>
+            t9: i32 = Constant<-4>
+        t3: i1 = Constant<-1>
+
+i_btype_branches__opc_bge__x_0__xpr_general__relative_addr12__
+t18: ch = ret t21, model/share/isa/isa.codal:1581:1
+    t21: ch = jump t0, t20, t8, model/ia/other/ia_utils.codal:147:6 @[ model/share/isa/isa.codal:562:9 @[ model/share/isa/isa.codal:1580:5 ] ]
+        t0: ch = EntryToken
+        t20: i32 = add t19, Constant:i32<-4>, model/share/isa/isa.codal:529:149 @[ model/share/isa/isa.codal:1580:5 ]
+            t19: i32 = add get_pc:i32, t14, model/share/isa/isa.codal:529:74 @[ model/share/isa/isa.codal:1580:5 ]
+                t22: i32 = get_pc, model/share/isa/isa.codal:529:69 @[ model/share/isa/isa.codal:1580:5 ]
+                t14: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<13>, Constant:i32<1>, Constant:i32<0>, model/share/isa/isa.codal:983:21 @[ model/share/isa/isa.codal:3722:94 @[ model/share/isa/isa.codal:1579:18 ] ]
+                    t2: i32 = Constant<1>
+                    t12: i1 = Constant<-1>
+                    t13: i32 = Constant<13>
+                    t2: i32 = Constant<1>
+                    t3: i32 = Constant<0>
+            t9: i32 = Constant<-4>
+        t8: i1 = setcc t23, Constant:i32<1>, setlt:ch, model/share/isa/isa.codal:547:128 @[ model/share/isa/isa.codal:1580:5 ]
+            t23: i32 = regop_read Constant:i32<0>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:526:56 @[ model/share/isa/isa.codal:1580:5 ] ]
+                t3: i32 = Constant<0>
+            t2: i32 = Constant<1>
+            t7: ch = setlt
+
+i_btype_branches__opc_bge__xpr_general__x_0__relative_addr12__
+t19: ch = ret t22, model/share/isa/isa.codal:1592:1
+    t22: ch = jump t0, t21, t9, model/ia/other/ia_utils.codal:147:6 @[ model/share/isa/isa.codal:562:9 @[ model/share/isa/isa.codal:1591:5 ] ]
+        t0: ch = EntryToken
+        t21: i32 = add t20, Constant:i32<-4>, model/share/isa/isa.codal:529:149 @[ model/share/isa/isa.codal:1591:5 ]
+            t20: i32 = add get_pc:i32, t15, model/share/isa/isa.codal:529:74 @[ model/share/isa/isa.codal:1591:5 ]
+                t23: i32 = get_pc, model/share/isa/isa.codal:529:69 @[ model/share/isa/isa.codal:1591:5 ]
+                t15: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<13>, Constant:i32<1>, Constant:i32<0>, model/share/isa/isa.codal:983:21 @[ model/share/isa/isa.codal:3722:94 @[ model/share/isa/isa.codal:1590:18 ] ]
+                    t2: i32 = Constant<1>
+                    t13: i1 = Constant<-1>
+                    t14: i32 = Constant<13>
+                    t2: i32 = Constant<1>
+                    t3: i32 = Constant<0>
+            t10: i32 = Constant<-4>
+        t9: i1 = setcc t24, Constant:i32<-1>, setgt:ch, model/share/isa/isa.codal:547:128 @[ model/share/isa/isa.codal:1591:5 ]
+            t24: i32 = regop_read Constant:i32<0>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:525:56 @[ model/share/isa/isa.codal:1591:5 ] ]
+                t3: i32 = Constant<0>
+            t7: i32 = Constant<-1>
+            t8: ch = setgt
+
+i_btype_branches__opc_bge__xpr_general__xpr_general__relative_addr12__
+t20: ch = ret t23, model/share/isa/isa.codal:1604:1
+    t23: ch = jump t0, t22, t9, model/ia/other/ia_utils.codal:147:6 @[ model/share/isa/isa.codal:562:9 @[ model/share/isa/isa.codal:1603:5 ] ]
+        t0: ch = EntryToken
+        t22: i32 = add t21, Constant:i32<-4>, model/share/isa/isa.codal:529:149 @[ model/share/isa/isa.codal:1603:5 ]
+            t21: i32 = add get_pc:i32, t16, model/share/isa/isa.codal:529:74 @[ model/share/isa/isa.codal:1603:5 ]
+                t24: i32 = get_pc, model/share/isa/isa.codal:529:69 @[ model/share/isa/isa.codal:1603:5 ]
+                t16: i32 = immop_read Constant:i32<2>, Constant:i1<-1>, Constant:i32<13>, Constant:i32<1>, Constant:i32<0>, model/share/isa/isa.codal:983:21 @[ model/share/isa/isa.codal:3722:94 @[ model/share/isa/isa.codal:1602:18 ] ]
+                    t13: i32 = Constant<2>
+                    t14: i1 = Constant<-1>
+                    t15: i32 = Constant<13>
+                    t2: i32 = Constant<1>
+                    t3: i32 = Constant<0>
+            t10: i32 = Constant<-4>
+        t9: i1 = setcc t25, t26, setge:ch, model/share/isa/isa.codal:547:128 @[ model/share/isa/isa.codal:1603:5 ]
+            t25: i32 = regop_read Constant:i32<0>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:525:56 @[ model/share/isa/isa.codal:1603:5 ] ]
+                t3: i32 = Constant<0>
+            t26: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:526:56 @[ model/share/isa/isa.codal:1603:5 ] ]
+                t2: i32 = Constant<1>
+            t8: ch = setge
+
+i_btype_branches__opc_bgeu__x_0__x_0__relative_addr12__
+t14: ch = ret t17, model/share/isa/isa.codal:1614:1
+    t17: ch = jump t0, t16, Constant:i1<-1>, model/ia/other/ia_utils.codal:147:6 @[ model/share/isa/isa.codal:562:9 @[ model/share/isa/isa.codal:1613:5 ] ]
+        t0: ch = EntryToken
+        t16: i32 = add t15, Constant:i32<-4>, model/share/isa/isa.codal:529:149 @[ model/share/isa/isa.codal:1613:5 ]
+            t15: i32 = add get_pc:i32, t6, model/share/isa/isa.codal:529:74 @[ model/share/isa/isa.codal:1613:5 ]
+                t18: i32 = get_pc, model/share/isa/isa.codal:529:69 @[ model/share/isa/isa.codal:1613:5 ]
+                t6: i32 = immop_read Constant:i32<0>, Constant:i1<-1>, Constant:i32<13>, Constant:i32<1>, Constant:i32<0>, model/share/isa/isa.codal:983:21 @[ model/share/isa/isa.codal:3722:94 @[ model/share/isa/isa.codal:1612:18 ] ]
+                    t2: i32 = Constant<0>
+                    t3: i1 = Constant<-1>
+                    t4: i32 = Constant<13>
+                    t5: i32 = Constant<1>
+                    t2: i32 = Constant<0>
+            t9: i32 = Constant<-4>
+        t3: i1 = Constant<-1>
+
+i_btype_branches__opc_bgeu__x_0__xpr_general__relative_addr12__
+t18: ch = ret t21, model/share/isa/isa.codal:1625:1
+    t21: ch = jump t0, t20, t8, model/ia/other/ia_utils.codal:147:6 @[ model/share/isa/isa.codal:562:9 @[ model/share/isa/isa.codal:1624:5 ] ]
+        t0: ch = EntryToken
+        t20: i32 = add t19, Constant:i32<-4>, model/share/isa/isa.codal:529:149 @[ model/share/isa/isa.codal:1624:5 ]
+            t19: i32 = add get_pc:i32, t14, model/share/isa/isa.codal:529:74 @[ model/share/isa/isa.codal:1624:5 ]
+                t22: i32 = get_pc, model/share/isa/isa.codal:529:69 @[ model/share/isa/isa.codal:1624:5 ]
+                t14: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<13>, Constant:i32<1>, Constant:i32<0>, model/share/isa/isa.codal:983:21 @[ model/share/isa/isa.codal:3722:94 @[ model/share/isa/isa.codal:1623:18 ] ]
+                    t2: i32 = Constant<1>
+                    t12: i1 = Constant<-1>
+                    t13: i32 = Constant<13>
+                    t2: i32 = Constant<1>
+                    t3: i32 = Constant<0>
+            t9: i32 = Constant<-4>
+        t8: i1 = setcc t23, Constant:i32<0>, seteq:ch, model/share/isa/isa.codal:553:129 @[ model/share/isa/isa.codal:1624:5 ]
+            t23: i32 = regop_read Constant:i32<0>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:526:56 @[ model/share/isa/isa.codal:1624:5 ] ]
+                t3: i32 = Constant<0>
+            t3: i32 = Constant<0>
+            t7: ch = seteq
+
+i_btype_branches__opc_bgeu__xpr_general__x_0__relative_addr12__
+t14: ch = ret t17, model/share/isa/isa.codal:1636:1
+    t17: ch = jump t0, t16, Constant:i1<-1>, model/ia/other/ia_utils.codal:147:6 @[ model/share/isa/isa.codal:562:9 @[ model/share/isa/isa.codal:1635:5 ] ]
+        t0: ch = EntryToken
+        t16: i32 = add t15, Constant:i32<-4>, model/share/isa/isa.codal:529:149 @[ model/share/isa/isa.codal:1635:5 ]
+            t15: i32 = add get_pc:i32, t6, model/share/isa/isa.codal:529:74 @[ model/share/isa/isa.codal:1635:5 ]
+                t18: i32 = get_pc, model/share/isa/isa.codal:529:69 @[ model/share/isa/isa.codal:1635:5 ]
+                t6: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<13>, Constant:i32<1>, Constant:i32<0>, model/share/isa/isa.codal:983:21 @[ model/share/isa/isa.codal:3722:94 @[ model/share/isa/isa.codal:1634:18 ] ]
+                    t2: i32 = Constant<1>
+                    t3: i1 = Constant<-1>
+                    t4: i32 = Constant<13>
+                    t2: i32 = Constant<1>
+                    t5: i32 = Constant<0>
+            t9: i32 = Constant<-4>
+        t3: i1 = Constant<-1>
+
+i_btype_branches__opc_bgeu__xpr_general__xpr_general__relative_addr12__
+t20: ch = ret t23, model/share/isa/isa.codal:1648:1
+    t23: ch = jump t0, t22, t9, model/ia/other/ia_utils.codal:147:6 @[ model/share/isa/isa.codal:562:9 @[ model/share/isa/isa.codal:1647:5 ] ]
+        t0: ch = EntryToken
+        t22: i32 = add t21, Constant:i32<-4>, model/share/isa/isa.codal:529:149 @[ model/share/isa/isa.codal:1647:5 ]
+            t21: i32 = add get_pc:i32, t16, model/share/isa/isa.codal:529:74 @[ model/share/isa/isa.codal:1647:5 ]
+                t24: i32 = get_pc, model/share/isa/isa.codal:529:69 @[ model/share/isa/isa.codal:1647:5 ]
+                t16: i32 = immop_read Constant:i32<2>, Constant:i1<-1>, Constant:i32<13>, Constant:i32<1>, Constant:i32<0>, model/share/isa/isa.codal:983:21 @[ model/share/isa/isa.codal:3722:94 @[ model/share/isa/isa.codal:1646:18 ] ]
+                    t13: i32 = Constant<2>
+                    t14: i1 = Constant<-1>
+                    t15: i32 = Constant<13>
+                    t2: i32 = Constant<1>
+                    t3: i32 = Constant<0>
+            t10: i32 = Constant<-4>
+        t9: i1 = setcc t25, t26, setuge:ch, model/share/isa/isa.codal:553:129 @[ model/share/isa/isa.codal:1647:5 ]
+            t25: i32 = regop_read Constant:i32<0>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:525:56 @[ model/share/isa/isa.codal:1647:5 ] ]
+                t3: i32 = Constant<0>
+            t26: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:526:56 @[ model/share/isa/isa.codal:1647:5 ] ]
+                t2: i32 = Constant<1>
+            t8: ch = setuge
+
+i_btype_branches__opc_blt__x_0__x_0__relative_addr12__
+t1: ch = ret t0, model/share/isa/isa.codal:1658:1
+    t0: ch = EntryToken
+
+i_btype_branches__opc_blt__x_0__xpr_general__relative_addr12__
+t18: ch = ret t21, model/share/isa/isa.codal:1669:1
+    t21: ch = jump t0, t20, t8, model/ia/other/ia_utils.codal:147:6 @[ model/share/isa/isa.codal:562:9 @[ model/share/isa/isa.codal:1668:5 ] ]
+        t0: ch = EntryToken
+        t20: i32 = add t19, Constant:i32<-4>, model/share/isa/isa.codal:529:149 @[ model/share/isa/isa.codal:1668:5 ]
+            t19: i32 = add get_pc:i32, t14, model/share/isa/isa.codal:529:74 @[ model/share/isa/isa.codal:1668:5 ]
+                t22: i32 = get_pc, model/share/isa/isa.codal:529:69 @[ model/share/isa/isa.codal:1668:5 ]
+                t14: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<13>, Constant:i32<1>, Constant:i32<0>, model/share/isa/isa.codal:983:21 @[ model/share/isa/isa.codal:3722:94 @[ model/share/isa/isa.codal:1667:18 ] ]
+                    t2: i32 = Constant<1>
+                    t12: i1 = Constant<-1>
+                    t13: i32 = Constant<13>
+                    t2: i32 = Constant<1>
+                    t3: i32 = Constant<0>
+            t9: i32 = Constant<-4>
+        t8: i1 = setcc t23, Constant:i32<0>, setgt:ch, model/share/isa/isa.codal:544:128 @[ model/share/isa/isa.codal:1668:5 ]
+            t23: i32 = regop_read Constant:i32<0>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:526:56 @[ model/share/isa/isa.codal:1668:5 ] ]
+                t3: i32 = Constant<0>
+            t3: i32 = Constant<0>
+            t7: ch = setgt
+
+i_btype_branches__opc_blt__xpr_general__x_0__relative_addr12__
+t18: ch = ret t21, model/share/isa/isa.codal:1680:1
+    t21: ch = jump t0, t20, t8, model/ia/other/ia_utils.codal:147:6 @[ model/share/isa/isa.codal:562:9 @[ model/share/isa/isa.codal:1679:5 ] ]
+        t0: ch = EntryToken
+        t20: i32 = add t19, Constant:i32<-4>, model/share/isa/isa.codal:529:149 @[ model/share/isa/isa.codal:1679:5 ]
+            t19: i32 = add get_pc:i32, t14, model/share/isa/isa.codal:529:74 @[ model/share/isa/isa.codal:1679:5 ]
+                t22: i32 = get_pc, model/share/isa/isa.codal:529:69 @[ model/share/isa/isa.codal:1679:5 ]
+                t14: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<13>, Constant:i32<1>, Constant:i32<0>, model/share/isa/isa.codal:983:21 @[ model/share/isa/isa.codal:3722:94 @[ model/share/isa/isa.codal:1678:18 ] ]
+                    t2: i32 = Constant<1>
+                    t12: i1 = Constant<-1>
+                    t13: i32 = Constant<13>
+                    t2: i32 = Constant<1>
+                    t3: i32 = Constant<0>
+            t9: i32 = Constant<-4>
+        t8: i1 = setcc t23, Constant:i32<0>, setlt:ch, model/share/isa/isa.codal:544:128 @[ model/share/isa/isa.codal:1679:5 ]
+            t23: i32 = regop_read Constant:i32<0>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:525:56 @[ model/share/isa/isa.codal:1679:5 ] ]
+                t3: i32 = Constant<0>
+            t3: i32 = Constant<0>
+            t7: ch = setlt
+
+i_btype_branches__opc_blt__xpr_general__xpr_general__relative_addr12__
+t20: ch = ret t23, model/share/isa/isa.codal:1692:1
+    t23: ch = jump t0, t22, t9, model/ia/other/ia_utils.codal:147:6 @[ model/share/isa/isa.codal:562:9 @[ model/share/isa/isa.codal:1691:5 ] ]
+        t0: ch = EntryToken
+        t22: i32 = add t21, Constant:i32<-4>, model/share/isa/isa.codal:529:149 @[ model/share/isa/isa.codal:1691:5 ]
+            t21: i32 = add get_pc:i32, t16, model/share/isa/isa.codal:529:74 @[ model/share/isa/isa.codal:1691:5 ]
+                t24: i32 = get_pc, model/share/isa/isa.codal:529:69 @[ model/share/isa/isa.codal:1691:5 ]
+                t16: i32 = immop_read Constant:i32<2>, Constant:i1<-1>, Constant:i32<13>, Constant:i32<1>, Constant:i32<0>, model/share/isa/isa.codal:983:21 @[ model/share/isa/isa.codal:3722:94 @[ model/share/isa/isa.codal:1690:18 ] ]
+                    t13: i32 = Constant<2>
+                    t14: i1 = Constant<-1>
+                    t15: i32 = Constant<13>
+                    t2: i32 = Constant<1>
+                    t3: i32 = Constant<0>
+            t10: i32 = Constant<-4>
+        t9: i1 = setcc t25, t26, setlt:ch, model/share/isa/isa.codal:544:128 @[ model/share/isa/isa.codal:1691:5 ]
+            t25: i32 = regop_read Constant:i32<0>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:525:56 @[ model/share/isa/isa.codal:1691:5 ] ]
+                t3: i32 = Constant<0>
+            t26: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:526:56 @[ model/share/isa/isa.codal:1691:5 ] ]
+                t2: i32 = Constant<1>
+            t8: ch = setlt
+
+i_btype_branches__opc_bltu__x_0__x_0__relative_addr12__
+t1: ch = ret t0, model/share/isa/isa.codal:1702:1
+    t0: ch = EntryToken
+
+i_btype_branches__opc_bltu__x_0__xpr_general__relative_addr12__
+t18: ch = ret t21, model/share/isa/isa.codal:1713:1
+    t21: ch = jump t0, t20, t8, model/ia/other/ia_utils.codal:147:6 @[ model/share/isa/isa.codal:562:9 @[ model/share/isa/isa.codal:1712:5 ] ]
+        t0: ch = EntryToken
+        t20: i32 = add t19, Constant:i32<-4>, model/share/isa/isa.codal:529:149 @[ model/share/isa/isa.codal:1712:5 ]
+            t19: i32 = add get_pc:i32, t14, model/share/isa/isa.codal:529:74 @[ model/share/isa/isa.codal:1712:5 ]
+                t22: i32 = get_pc, model/share/isa/isa.codal:529:69 @[ model/share/isa/isa.codal:1712:5 ]
+                t14: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<13>, Constant:i32<1>, Constant:i32<0>, model/share/isa/isa.codal:983:21 @[ model/share/isa/isa.codal:3722:94 @[ model/share/isa/isa.codal:1711:18 ] ]
+                    t2: i32 = Constant<1>
+                    t12: i1 = Constant<-1>
+                    t13: i32 = Constant<13>
+                    t2: i32 = Constant<1>
+                    t3: i32 = Constant<0>
+            t9: i32 = Constant<-4>
+        t8: i1 = setcc t23, Constant:i32<0>, setne:ch, model/share/isa/isa.codal:550:129 @[ model/share/isa/isa.codal:1712:5 ]
+            t23: i32 = regop_read Constant:i32<0>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:526:56 @[ model/share/isa/isa.codal:1712:5 ] ]
+                t3: i32 = Constant<0>
+            t3: i32 = Constant<0>
+            t7: ch = setne
+
+i_btype_branches__opc_bltu__xpr_general__x_0__relative_addr12__
+t1: ch = ret t0, model/share/isa/isa.codal:1724:1
+    t0: ch = EntryToken
+
+i_btype_branches__opc_bltu__xpr_general__xpr_general__relative_addr12__
+t20: ch = ret t23, model/share/isa/isa.codal:1736:1
+    t23: ch = jump t0, t22, t9, model/ia/other/ia_utils.codal:147:6 @[ model/share/isa/isa.codal:562:9 @[ model/share/isa/isa.codal:1735:5 ] ]
+        t0: ch = EntryToken
+        t22: i32 = add t21, Constant:i32<-4>, model/share/isa/isa.codal:529:149 @[ model/share/isa/isa.codal:1735:5 ]
+            t21: i32 = add get_pc:i32, t16, model/share/isa/isa.codal:529:74 @[ model/share/isa/isa.codal:1735:5 ]
+                t24: i32 = get_pc, model/share/isa/isa.codal:529:69 @[ model/share/isa/isa.codal:1735:5 ]
+                t16: i32 = immop_read Constant:i32<2>, Constant:i1<-1>, Constant:i32<13>, Constant:i32<1>, Constant:i32<0>, model/share/isa/isa.codal:983:21 @[ model/share/isa/isa.codal:3722:94 @[ model/share/isa/isa.codal:1734:18 ] ]
+                    t13: i32 = Constant<2>
+                    t14: i1 = Constant<-1>
+                    t15: i32 = Constant<13>
+                    t2: i32 = Constant<1>
+                    t3: i32 = Constant<0>
+            t10: i32 = Constant<-4>
+        t9: i1 = setcc t25, t26, setult:ch, model/share/isa/isa.codal:550:129 @[ model/share/isa/isa.codal:1735:5 ]
+            t25: i32 = regop_read Constant:i32<0>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:525:56 @[ model/share/isa/isa.codal:1735:5 ] ]
+                t3: i32 = Constant<0>
+            t26: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:526:56 @[ model/share/isa/isa.codal:1735:5 ] ]
+                t2: i32 = Constant<1>
+            t8: ch = setult
+
+i_btype_branches__opc_bne__x_0__x_0__relative_addr12__
+t1: ch = ret t0, model/share/isa/isa.codal:1746:1
+    t0: ch = EntryToken
+
+i_btype_branches__opc_bne__x_0__xpr_general__relative_addr12__
+t18: ch = ret t21, model/share/isa/isa.codal:1757:1
+    t21: ch = jump t0, t20, t8, model/ia/other/ia_utils.codal:147:6 @[ model/share/isa/isa.codal:562:9 @[ model/share/isa/isa.codal:1756:5 ] ]
+        t0: ch = EntryToken
+        t20: i32 = add t19, Constant:i32<-4>, model/share/isa/isa.codal:529:149 @[ model/share/isa/isa.codal:1756:5 ]
+            t19: i32 = add get_pc:i32, t14, model/share/isa/isa.codal:529:74 @[ model/share/isa/isa.codal:1756:5 ]
+                t22: i32 = get_pc, model/share/isa/isa.codal:529:69 @[ model/share/isa/isa.codal:1756:5 ]
+                t14: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<13>, Constant:i32<1>, Constant:i32<0>, model/share/isa/isa.codal:983:21 @[ model/share/isa/isa.codal:3722:94 @[ model/share/isa/isa.codal:1755:18 ] ]
+                    t2: i32 = Constant<1>
+                    t12: i1 = Constant<-1>
+                    t13: i32 = Constant<13>
+                    t2: i32 = Constant<1>
+                    t3: i32 = Constant<0>
+            t9: i32 = Constant<-4>
+        t8: i1 = setcc t23, Constant:i32<0>, setne:ch, model/share/isa/isa.codal:541:119 @[ model/share/isa/isa.codal:1756:5 ]
+            t23: i32 = regop_read Constant:i32<0>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:526:56 @[ model/share/isa/isa.codal:1756:5 ] ]
+                t3: i32 = Constant<0>
+            t3: i32 = Constant<0>
+            t7: ch = setne
+
+i_btype_branches__opc_bne__xpr_general__x_0__relative_addr12__
+t18: ch = ret t21, model/share/isa/isa.codal:1768:1
+    t21: ch = jump t0, t20, t8, model/ia/other/ia_utils.codal:147:6 @[ model/share/isa/isa.codal:562:9 @[ model/share/isa/isa.codal:1767:5 ] ]
+        t0: ch = EntryToken
+        t20: i32 = add t19, Constant:i32<-4>, model/share/isa/isa.codal:529:149 @[ model/share/isa/isa.codal:1767:5 ]
+            t19: i32 = add get_pc:i32, t14, model/share/isa/isa.codal:529:74 @[ model/share/isa/isa.codal:1767:5 ]
+                t22: i32 = get_pc, model/share/isa/isa.codal:529:69 @[ model/share/isa/isa.codal:1767:5 ]
+                t14: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<13>, Constant:i32<1>, Constant:i32<0>, model/share/isa/isa.codal:983:21 @[ model/share/isa/isa.codal:3722:94 @[ model/share/isa/isa.codal:1766:18 ] ]
+                    t2: i32 = Constant<1>
+                    t12: i1 = Constant<-1>
+                    t13: i32 = Constant<13>
+                    t2: i32 = Constant<1>
+                    t3: i32 = Constant<0>
+            t9: i32 = Constant<-4>
+        t8: i1 = setcc t23, Constant:i32<0>, setne:ch, model/share/isa/isa.codal:541:119 @[ model/share/isa/isa.codal:1767:5 ]
+            t23: i32 = regop_read Constant:i32<0>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:525:56 @[ model/share/isa/isa.codal:1767:5 ] ]
+                t3: i32 = Constant<0>
+            t3: i32 = Constant<0>
+            t7: ch = setne
+
+i_btype_branches__opc_bne__xpr_general__xpr_general__relative_addr12__
+t20: ch = ret t23, model/share/isa/isa.codal:1780:1
+    t23: ch = jump t0, t22, t9, model/ia/other/ia_utils.codal:147:6 @[ model/share/isa/isa.codal:562:9 @[ model/share/isa/isa.codal:1779:5 ] ]
+        t0: ch = EntryToken
+        t22: i32 = add t21, Constant:i32<-4>, model/share/isa/isa.codal:529:149 @[ model/share/isa/isa.codal:1779:5 ]
+            t21: i32 = add get_pc:i32, t16, model/share/isa/isa.codal:529:74 @[ model/share/isa/isa.codal:1779:5 ]
+                t24: i32 = get_pc, model/share/isa/isa.codal:529:69 @[ model/share/isa/isa.codal:1779:5 ]
+                t16: i32 = immop_read Constant:i32<2>, Constant:i1<-1>, Constant:i32<13>, Constant:i32<1>, Constant:i32<0>, model/share/isa/isa.codal:983:21 @[ model/share/isa/isa.codal:3722:94 @[ model/share/isa/isa.codal:1778:18 ] ]
+                    t13: i32 = Constant<2>
+                    t14: i1 = Constant<-1>
+                    t15: i32 = Constant<13>
+                    t2: i32 = Constant<1>
+                    t3: i32 = Constant<0>
+            t10: i32 = Constant<-4>
+        t9: i1 = setcc t25, t26, setne:ch, model/share/isa/isa.codal:541:119 @[ model/share/isa/isa.codal:1779:5 ]
+            t25: i32 = regop_read Constant:i32<0>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:525:56 @[ model/share/isa/isa.codal:1779:5 ] ]
+                t3: i32 = Constant<0>
+            t26: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:526:56 @[ model/share/isa/isa.codal:1779:5 ] ]
+                t2: i32 = Constant<1>
+            t8: ch = setne
+
+i_call_alias__relative_addr20__
+t16: ch = ret t19, model/share/isa/isa.codal:1787:1
+    t19: ch = jump t20, t18, Constant:i1<-1>, model/ia/other/ia_utils.codal:147:6 @[ model/share/isa/isa.codal:910:9 @[ model/share/isa/isa.codal:1786:5 ] ]
+        t20: ch = reg_write t0, Constant:i32<0>, Constant:i32<1>, get_pc:i32, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:902:9 @[ model/share/isa/isa.codal:1786:5 ] ]
+            t0: ch = EntryToken
+            t5: i32 = Constant<1>
+            t21: i32 = get_pc, model/share/isa/isa.codal:902:26 @[ model/share/isa/isa.codal:1786:5 ]
+            t3: i1 = Constant<-1>
+        t18: i32 = add t17, Constant:i32<-4>, model/share/isa/isa.codal:909:158 @[ model/share/isa/isa.codal:1786:5 ]
+            t17: i32 = add get_pc:i32, t6, model/share/isa/isa.codal:909:82 @[ model/share/isa/isa.codal:1786:5 ]
+                t21: i32 = get_pc, model/share/isa/isa.codal:902:26 @[ model/share/isa/isa.codal:1786:5 ]
+                t6: i32 = immop_read Constant:i32<0>, Constant:i1<-1>, Constant:i32<21>, Constant:i32<1>, Constant:i32<0>, model/share/isa/isa.codal:988:21 @[ model/share/isa/isa.codal:3728:94 @[ model/share/isa/isa.codal:1785:18 ] ]
+                    t2: i32 = Constant<0>
+                    t3: i1 = Constant<-1>
+                    t4: i32 = Constant<21>
+                    t5: i32 = Constant<1>
+                    t2: i32 = Constant<0>
+            t11: i32 = Constant<-4>
+        t3: i1 = Constant<-1>
+
+i_call_reg_alias__simm12__x_0__
+t14: ch = ret t15, model/share/isa/isa.codal:1795:1
+    t15: ch = jump t16, t11, Constant:i1<-1>, model/ia/other/ia_utils.codal:147:6 @[ model/share/isa/isa.codal:935:9 @[ model/share/isa/isa.codal:1794:5 ] ]
+        t16: ch = reg_write t0, Constant:i32<0>, Constant:i32<1>, get_pc:i32, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:932:9 @[ model/share/isa/isa.codal:1794:5 ] ]
+            t0: ch = EntryToken
+            t5: i32 = Constant<1>
+            t17: i32 = get_pc, model/ia/other/ia_utils.codal:141:8 @[ model/share/isa/isa.codal:932:26 @[ model/share/isa/isa.codal:1794:5 ] ]
+            t6: i1 = Constant<-1>
+        t11: i32 = immop_read Constant:i32<0>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<2>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:1792:18 ] ]
+            t4: i32 = Constant<0>
+            t6: i1 = Constant<-1>
+            t9: i32 = Constant<12>
+            t10: i32 = Constant<2>
+            t4: i32 = Constant<0>
+        t6: i1 = Constant<-1>
+
+i_call_reg_alias__simm12__xpr_general__
+t18: ch = ret t19, model/share/isa/isa.codal:1804:1
+    t19: ch = jump t20, t15, Constant:i1<-1>, model/ia/other/ia_utils.codal:147:6 @[ model/share/isa/isa.codal:935:9 @[ model/share/isa/isa.codal:1803:5 ] ]
+        t20: ch = reg_write t0, Constant:i32<0>, Constant:i32<1>, get_pc:i32, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:932:9 @[ model/share/isa/isa.codal:1803:5 ] ]
+            t0: ch = EntryToken
+            t9: i32 = Constant<1>
+            t22: i32 = get_pc, model/ia/other/ia_utils.codal:141:8 @[ model/share/isa/isa.codal:932:26 @[ model/share/isa/isa.codal:1803:5 ] ]
+            t3: i1 = Constant<-1>
+        t15: i32 = and t13, Constant:i32<-4>, model/share/isa/isa.codal:934:191 @[ model/share/isa/isa.codal:1803:5 ]
+            t13: i32 = add t21, t5, model/share/isa/isa.codal:934:135 @[ model/share/isa/isa.codal:1803:5 ]
+                t21: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:934:74 @[ model/share/isa/isa.codal:1803:5 ] ]
+                    t9: i32 = Constant<1>
+                t5: i32 = immop_read Constant:i32<0>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:1800:18 ] ]
+                    t2: i32 = Constant<0>
+                    t3: i1 = Constant<-1>
+                    t4: i32 = Constant<12>
+                    t2: i32 = Constant<0>
+                    t2: i32 = Constant<0>
+            t14: i32 = Constant<-4>
+        t3: i1 = Constant<-1>
+
+i_halt__opc_halt__
+t4: ch = ret t3, model/share/isa/isa.codal:1810:1
+    t3: ch = halt t0
+        t0: ch = EntryToken
+
+i_itype_alu__opc_addi__x_0__x_0__simm12__
+t1: ch = ret t0, model/share/isa/isa.codal:1820:1
+    t0: ch = EntryToken
+
+i_itype_alu__opc_addi__x_0__xpr_general__simm12__
+t1: ch = ret t0, model/share/isa/isa.codal:1831:1
+    t0: ch = EntryToken
+
+i_itype_alu__opc_addi__xpr_general__x_0__simm12__
+t9: ch = ret t10, model/share/isa/isa.codal:1842:1
+    t10: ch = regop_write t0, Constant:i32<0>, t6, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:327:5 @[ model/share/isa/isa.codal:1841:5 ] ]
+        t0: ch = EntryToken
+        t5: i32 = Constant<0>
+        t6: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:1840:18 ] ]
+            t2: i32 = Constant<1>
+            t3: i1 = Constant<-1>
+            t4: i32 = Constant<12>
+            t5: i32 = Constant<0>
+            t5: i32 = Constant<0>
+        t3: i1 = Constant<-1>
+
+i_itype_alu__opc_addi__xpr_general__xpr_general__simm12__
+t13: ch = ret t14, model/share/isa/isa.codal:1854:1
+    t14: ch = regop_write t0, Constant:i32<0>, t10, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:327:5 @[ model/share/isa/isa.codal:1853:5 ] ]
+        t0: ch = EntryToken
+        t8: i32 = Constant<0>
+        t10: i32 = add t15, t9, model/share/isa/isa.codal:302:106 @[ model/share/isa/isa.codal:1853:5 ]
+            t15: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:297:51 @[ model/share/isa/isa.codal:1853:5 ] ]
+                t2: i32 = Constant<1>
+            t9: i32 = immop_read Constant:i32<2>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:1852:18 ] ]
+                t5: i32 = Constant<2>
+                t6: i1 = Constant<-1>
+                t7: i32 = Constant<12>
+                t8: i32 = Constant<0>
+                t8: i32 = Constant<0>
+        t6: i1 = Constant<-1>
+
+i_itype_alu__opc_andi__x_0__x_0__simm12__
+t1: ch = ret t0, model/share/isa/isa.codal:1864:1
+    t0: ch = EntryToken
+
+i_itype_alu__opc_andi__x_0__xpr_general__simm12__
+t1: ch = ret t0, model/share/isa/isa.codal:1875:1
+    t0: ch = EntryToken
+
+i_itype_alu__opc_andi__xpr_general__x_0__simm12__
+t6: ch = ret t7, model/share/isa/isa.codal:1886:1
+    t7: ch = regop_write t0, Constant:i32<0>, Constant:i32<0>, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:327:5 @[ model/share/isa/isa.codal:1885:5 ] ]
+        t0: ch = EntryToken
+        t3: i32 = Constant<0>
+        t3: i32 = Constant<0>
+        t4: i1 = Constant<-1>
+
+i_itype_alu__opc_andi__xpr_general__xpr_general__simm12__
+t13: ch = ret t14, model/share/isa/isa.codal:1898:1
+    t14: ch = regop_write t0, Constant:i32<0>, t10, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:327:5 @[ model/share/isa/isa.codal:1897:5 ] ]
+        t0: ch = EntryToken
+        t8: i32 = Constant<0>
+        t10: i32 = and t15, t9, model/share/isa/isa.codal:319:106 @[ model/share/isa/isa.codal:1897:5 ]
+            t15: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:297:51 @[ model/share/isa/isa.codal:1897:5 ] ]
+                t2: i32 = Constant<1>
+            t9: i32 = immop_read Constant:i32<2>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:1896:18 ] ]
+                t5: i32 = Constant<2>
+                t6: i1 = Constant<-1>
+                t7: i32 = Constant<12>
+                t8: i32 = Constant<0>
+                t8: i32 = Constant<0>
+        t6: i1 = Constant<-1>
+
+i_itype_alu__opc_ori__x_0__x_0__simm12__
+t1: ch = ret t0, model/share/isa/isa.codal:1908:1
+    t0: ch = EntryToken
+
+i_itype_alu__opc_ori__x_0__xpr_general__simm12__
+t1: ch = ret t0, model/share/isa/isa.codal:1919:1
+    t0: ch = EntryToken
+
+i_itype_alu__opc_ori__xpr_general__x_0__simm12__
+t9: ch = ret t10, model/share/isa/isa.codal:1930:1
+    t10: ch = regop_write t0, Constant:i32<0>, t6, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:327:5 @[ model/share/isa/isa.codal:1929:5 ] ]
+        t0: ch = EntryToken
+        t5: i32 = Constant<0>
+        t6: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:1928:18 ] ]
+            t2: i32 = Constant<1>
+            t3: i1 = Constant<-1>
+            t4: i32 = Constant<12>
+            t5: i32 = Constant<0>
+            t5: i32 = Constant<0>
+        t3: i1 = Constant<-1>
+
+i_itype_alu__opc_ori__xpr_general__xpr_general__simm12__
+t13: ch = ret t14, model/share/isa/isa.codal:1942:1
+    t14: ch = regop_write t0, Constant:i32<0>, t10, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:327:5 @[ model/share/isa/isa.codal:1941:5 ] ]
+        t0: ch = EntryToken
+        t8: i32 = Constant<0>
+        t10: i32 = or t15, t9, model/share/isa/isa.codal:316:106 @[ model/share/isa/isa.codal:1941:5 ]
+            t15: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:297:51 @[ model/share/isa/isa.codal:1941:5 ] ]
+                t2: i32 = Constant<1>
+            t9: i32 = immop_read Constant:i32<2>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:1940:18 ] ]
+                t5: i32 = Constant<2>
+                t6: i1 = Constant<-1>
+                t7: i32 = Constant<12>
+                t8: i32 = Constant<0>
+                t8: i32 = Constant<0>
+        t6: i1 = Constant<-1>
+
+i_itype_alu__opc_slti__x_0__x_0__simm12__
+t1: ch = ret t0, model/share/isa/isa.codal:1952:1
+    t0: ch = EntryToken
+
+i_itype_alu__opc_slti__x_0__xpr_general__simm12__
+t1: ch = ret t0, model/share/isa/isa.codal:1963:1
+    t0: ch = EntryToken
+
+i_itype_alu__opc_slti__xpr_general__x_0__simm12__
+t12: ch = ret t13, model/share/isa/isa.codal:1974:1
+    t13: ch = regop_write t0, Constant:i32<0>, t9, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:327:5 @[ model/share/isa/isa.codal:1973:5 ] ]
+        t0: ch = EntryToken
+        t5: i32 = Constant<0>
+        t9: i32 = zero_extend t8
+            t8: i1 = setcc t6, Constant:i32<0>, setgt:ch, model/share/isa/isa.codal:305:71 @[ model/share/isa/isa.codal:1973:5 ]
+                t6: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:1972:18 ] ]
+                    t2: i32 = Constant<1>
+                    t3: i1 = Constant<-1>
+                    t4: i32 = Constant<12>
+                    t5: i32 = Constant<0>
+                    t5: i32 = Constant<0>
+                t5: i32 = Constant<0>
+                t7: ch = setgt
+        t3: i1 = Constant<-1>
+
+i_itype_alu__opc_slti__xpr_general__xpr_general__simm12__
+t15: ch = ret t16, model/share/isa/isa.codal:1986:1
+    t16: ch = regop_write t0, Constant:i32<0>, t12, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:327:5 @[ model/share/isa/isa.codal:1985:5 ] ]
+        t0: ch = EntryToken
+        t8: i32 = Constant<0>
+        t12: i32 = zero_extend t11
+            t11: i1 = setcc t17, t9, setlt:ch, model/share/isa/isa.codal:305:71 @[ model/share/isa/isa.codal:1985:5 ]
+                t17: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:297:51 @[ model/share/isa/isa.codal:1985:5 ] ]
+                    t2: i32 = Constant<1>
+                t9: i32 = immop_read Constant:i32<2>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:1984:18 ] ]
+                    t5: i32 = Constant<2>
+                    t6: i1 = Constant<-1>
+                    t7: i32 = Constant<12>
+                    t8: i32 = Constant<0>
+                    t8: i32 = Constant<0>
+                t10: ch = setlt
+        t6: i1 = Constant<-1>
+
+i_itype_alu__opc_sltiu__x_0__x_0__simm12__
+t1: ch = ret t0, model/share/isa/isa.codal:1996:1
+    t0: ch = EntryToken
+
+i_itype_alu__opc_sltiu__x_0__xpr_general__simm12__
+t1: ch = ret t0, model/share/isa/isa.codal:2007:1
+    t0: ch = EntryToken
+
+i_itype_alu__opc_sltiu__xpr_general__x_0__simm12__
+t12: ch = ret t13, model/share/isa/isa.codal:2018:1
+    t13: ch = regop_write t0, Constant:i32<0>, t9, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:327:5 @[ model/share/isa/isa.codal:2017:5 ] ]
+        t0: ch = EntryToken
+        t5: i32 = Constant<0>
+        t9: i32 = zero_extend t8
+            t8: i1 = setcc t6, Constant:i32<0>, setne:ch, model/share/isa/isa.codal:309:72 @[ model/share/isa/isa.codal:2017:5 ]
+                t6: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:2016:18 ] ]
+                    t2: i32 = Constant<1>
+                    t3: i1 = Constant<-1>
+                    t4: i32 = Constant<12>
+                    t5: i32 = Constant<0>
+                    t5: i32 = Constant<0>
+                t5: i32 = Constant<0>
+                t7: ch = setne
+        t3: i1 = Constant<-1>
+
+i_itype_alu__opc_sltiu__xpr_general__xpr_general__simm12__
+t15: ch = ret t16, model/share/isa/isa.codal:2030:1
+    t16: ch = regop_write t0, Constant:i32<0>, t12, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:327:5 @[ model/share/isa/isa.codal:2029:5 ] ]
+        t0: ch = EntryToken
+        t8: i32 = Constant<0>
+        t12: i32 = zero_extend t11
+            t11: i1 = setcc t17, t9, setult:ch, model/share/isa/isa.codal:309:72 @[ model/share/isa/isa.codal:2029:5 ]
+                t17: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:297:51 @[ model/share/isa/isa.codal:2029:5 ] ]
+                    t2: i32 = Constant<1>
+                t9: i32 = immop_read Constant:i32<2>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:2028:18 ] ]
+                    t5: i32 = Constant<2>
+                    t6: i1 = Constant<-1>
+                    t7: i32 = Constant<12>
+                    t8: i32 = Constant<0>
+                    t8: i32 = Constant<0>
+                t10: ch = setult
+        t6: i1 = Constant<-1>
+
+i_itype_alu__opc_xori__x_0__x_0__simm12__
+t1: ch = ret t0, model/share/isa/isa.codal:2040:1
+    t0: ch = EntryToken
+
+i_itype_alu__opc_xori__x_0__xpr_general__simm12__
+t1: ch = ret t0, model/share/isa/isa.codal:2051:1
+    t0: ch = EntryToken
+
+i_itype_alu__opc_xori__xpr_general__x_0__simm12__
+t9: ch = ret t10, model/share/isa/isa.codal:2062:1
+    t10: ch = regop_write t0, Constant:i32<0>, t6, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:327:5 @[ model/share/isa/isa.codal:2061:5 ] ]
+        t0: ch = EntryToken
+        t5: i32 = Constant<0>
+        t6: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:2060:18 ] ]
+            t2: i32 = Constant<1>
+            t3: i1 = Constant<-1>
+            t4: i32 = Constant<12>
+            t5: i32 = Constant<0>
+            t5: i32 = Constant<0>
+        t3: i1 = Constant<-1>
+
+i_itype_alu__opc_xori__xpr_general__xpr_general__simm12__
+t13: ch = ret t14, model/share/isa/isa.codal:2074:1
+    t14: ch = regop_write t0, Constant:i32<0>, t10, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:327:5 @[ model/share/isa/isa.codal:2073:5 ] ]
+        t0: ch = EntryToken
+        t8: i32 = Constant<0>
+        t10: i32 = xor t15, t9, model/share/isa/isa.codal:313:106 @[ model/share/isa/isa.codal:2073:5 ]
+            t15: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:297:51 @[ model/share/isa/isa.codal:2073:5 ] ]
+                t2: i32 = Constant<1>
+            t9: i32 = immop_read Constant:i32<2>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:2072:18 ] ]
+                t5: i32 = Constant<2>
+                t6: i1 = Constant<-1>
+                t7: i32 = Constant<12>
+                t8: i32 = Constant<0>
+                t8: i32 = Constant<0>
+        t6: i1 = Constant<-1>
+
+i_itype_jlreg__opc_jalr__x_0__simm12__x_0__
+t9: ch = ret t10, model/share/isa/isa.codal:2084:1
+    t10: ch = jump t0, t6, Constant:i1<-1>, model/ia/other/ia_utils.codal:147:6 @[ model/share/isa/isa.codal:493:9 @[ model/share/isa/isa.codal:2083:5 ] ]
+        t0: ch = EntryToken
+        t6: i32 = immop_read Constant:i32<0>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<1>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:2081:18 ] ]
+            t2: i32 = Constant<0>
+            t3: i1 = Constant<-1>
+            t4: i32 = Constant<12>
+            t5: i32 = Constant<1>
+            t2: i32 = Constant<0>
+        t3: i1 = Constant<-1>
+
+i_itype_jlreg__opc_jalr__x_0__simm12__xpr_general__
+t14: ch = ret t15, model/share/isa/isa.codal:2095:1
+    t15: ch = jump t0, t11, Constant:i1<-1>, model/ia/other/ia_utils.codal:147:6 @[ model/share/isa/isa.codal:493:9 @[ model/share/isa/isa.codal:2094:5 ] ]
+        t0: ch = EntryToken
+        t11: i32 = and t9, Constant:i32<-2>, model/share/isa/isa.codal:491:177 @[ model/share/isa/isa.codal:2094:5 ]
+            t9: i32 = add t16, t5, model/share/isa/isa.codal:491:121 @[ model/share/isa/isa.codal:2094:5 ]
+                t16: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:490:61 @[ model/share/isa/isa.codal:2094:5 ] ]
+                    t7: i32 = Constant<1>
+                t5: i32 = immop_read Constant:i32<0>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:2091:18 ] ]
+                    t2: i32 = Constant<0>
+                    t3: i1 = Constant<-1>
+                    t4: i32 = Constant<12>
+                    t2: i32 = Constant<0>
+                    t2: i32 = Constant<0>
+            t10: i32 = Constant<-2>
+        t3: i1 = Constant<-1>
+
+i_itype_jlreg__opc_jalr__xpr_general__simm12__x_0__
+t13: ch = ret t14, model/share/isa/isa.codal:2106:1
+    t14: ch = jump t15, t8, Constant:i1<-1>, model/ia/other/ia_utils.codal:147:6 @[ model/share/isa/isa.codal:493:9 @[ model/share/isa/isa.codal:2105:5 ] ]
+        t15: ch = regop_write t0, Constant:i32<0>, get_pc:i32, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:492:9 @[ model/share/isa/isa.codal:2105:5 ] ]
+            t0: ch = EntryToken
+            t7: i32 = Constant<0>
+            t16: i32 = get_pc, model/ia/other/ia_utils.codal:141:8 @[ model/share/isa/isa.codal:489:64 @[ model/share/isa/isa.codal:2105:5 ] ]
+            t5: i1 = Constant<-1>
+        t8: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<1>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:2103:18 ] ]
+            t4: i32 = Constant<1>
+            t5: i1 = Constant<-1>
+            t6: i32 = Constant<12>
+            t4: i32 = Constant<1>
+            t7: i32 = Constant<0>
+        t5: i1 = Constant<-1>
+
+i_itype_jlreg__opc_jalr__xpr_general__simm12__xpr_general__
+t19: ch = ret t20, model/share/isa/isa.codal:2118:1
+    t20: ch = jump t21, t14, Constant:i1<-1>, model/ia/other/ia_utils.codal:147:6 @[ model/share/isa/isa.codal:493:9 @[ model/share/isa/isa.codal:2117:5 ] ]
+        t21: ch = regop_write t0, Constant:i32<0>, get_pc:i32, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:492:9 @[ model/share/isa/isa.codal:2117:5 ] ]
+            t0: ch = EntryToken
+            t5: i32 = Constant<0>
+            t23: i32 = get_pc, model/ia/other/ia_utils.codal:141:8 @[ model/share/isa/isa.codal:489:64 @[ model/share/isa/isa.codal:2117:5 ] ]
+            t3: i1 = Constant<-1>
+        t14: i32 = and t12, Constant:i32<-2>, model/share/isa/isa.codal:491:177 @[ model/share/isa/isa.codal:2117:5 ]
+            t12: i32 = add t22, t6, model/share/isa/isa.codal:491:121 @[ model/share/isa/isa.codal:2117:5 ]
+                t22: i32 = regop_read Constant:i32<2>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:490:61 @[ model/share/isa/isa.codal:2117:5 ] ]
+                    t10: i32 = Constant<2>
+                t6: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:2114:18 ] ]
+                    t2: i32 = Constant<1>
+                    t3: i1 = Constant<-1>
+                    t4: i32 = Constant<12>
+                    t5: i32 = Constant<0>
+                    t5: i32 = Constant<0>
+            t13: i32 = Constant<-2>
+        t3: i1 = Constant<-1>
+
+i_itype_loads__opc_lb__x_0__simm12__x_0__
+t9: ch = ret t10:1, model/share/isa/isa.codal:2128:1
+    t10: i8,ch = mem_read t0, t5, Constant:i32<0>, se_instrsem.c:277:20 @[ model/ia/other/ia_utils.codal:82:24 @[ model/share/isa/isa.codal:359:55 @[ model/share/isa/isa.codal:2127:5 ] ] ]
+        t0: ch = EntryToken
+        t5: i32 = immop_read Constant:i32<0>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:2125:18 ] ]
+            t2: i32 = Constant<0>
+            t3: i1 = Constant<-1>
+            t4: i32 = Constant<12>
+            t2: i32 = Constant<0>
+            t2: i32 = Constant<0>
+
+i_itype_loads__opc_lb__x_0__simm12__xpr_general__
+t13: ch = ret t14:1, model/share/isa/isa.codal:2139:1
+    t14: i8,ch = mem_read t0, t10, Constant:i32<0>, se_instrsem.c:277:20 @[ model/ia/other/ia_utils.codal:82:24 @[ model/share/isa/isa.codal:359:55 @[ model/share/isa/isa.codal:2138:5 ] ] ]
+        t0: ch = EntryToken
+        t10: i32 = add t15, t5, model/share/isa/isa.codal:358:118 @[ model/share/isa/isa.codal:2138:5 ]
+            t15: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:358:57 @[ model/share/isa/isa.codal:2138:5 ] ]
+                t8: i32 = Constant<1>
+            t5: i32 = immop_read Constant:i32<0>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:2135:18 ] ]
+                t2: i32 = Constant<0>
+                t3: i1 = Constant<-1>
+                t4: i32 = Constant<12>
+                t2: i32 = Constant<0>
+                t2: i32 = Constant<0>
+
+i_itype_loads__opc_lb__xpr_general__simm12__x_0__
+t13: ch = ret t14, model/share/isa/isa.codal:2150:1
+    t14: ch = regop_write t15:1, Constant:i32<0>, t10, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:360:5 @[ model/share/isa/isa.codal:2149:5 ] ]
+        t15: i8,ch = mem_read t0, t6, Constant:i32<0>, se_instrsem.c:277:20 @[ model/ia/other/ia_utils.codal:82:24 @[ model/share/isa/isa.codal:359:55 @[ model/share/isa/isa.codal:2149:5 ] ] ]
+            t0: ch = EntryToken
+            t6: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:2147:18 ] ]
+                t2: i32 = Constant<1>
+                t3: i1 = Constant<-1>
+                t4: i32 = Constant<12>
+                t5: i32 = Constant<0>
+                t5: i32 = Constant<0>
+        t5: i32 = Constant<0>
+        t10: i32 = sign_extend t15, model/ia/other/ia_utils.codal:86:16 @[ model/share/isa/isa.codal:359:55 @[ model/share/isa/isa.codal:2149:5 ] ]
+            t15: i8,ch = mem_read t0, t6, Constant:i32<0>, se_instrsem.c:277:20 @[ model/ia/other/ia_utils.codal:82:24 @[ model/share/isa/isa.codal:359:55 @[ model/share/isa/isa.codal:2149:5 ] ] ]
+                t0: ch = EntryToken
+                t6: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:2147:18 ] ]
+                    t2: i32 = Constant<1>
+                    t3: i1 = Constant<-1>
+                    t4: i32 = Constant<12>
+                    t5: i32 = Constant<0>
+                    t5: i32 = Constant<0>
+        t3: i1 = Constant<-1>
+
+i_itype_loads__opc_lb__xpr_general__simm12__xpr_general__
+t17: ch = ret t18, model/share/isa/isa.codal:2162:1
+    t18: ch = regop_write t19:1, Constant:i32<0>, t14, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:360:5 @[ model/share/isa/isa.codal:2161:5 ] ]
+        t19: i8,ch = mem_read t0, t11, Constant:i32<0>, se_instrsem.c:277:20 @[ model/ia/other/ia_utils.codal:82:24 @[ model/share/isa/isa.codal:359:55 @[ model/share/isa/isa.codal:2161:5 ] ] ]
+            t0: ch = EntryToken
+            t11: i32 = add t20, t6, model/share/isa/isa.codal:358:118 @[ model/share/isa/isa.codal:2161:5 ]
+                t20: i32 = regop_read Constant:i32<2>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:358:57 @[ model/share/isa/isa.codal:2161:5 ] ]
+                    t9: i32 = Constant<2>
+                t6: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:2158:18 ] ]
+                    t2: i32 = Constant<1>
+                    t3: i1 = Constant<-1>
+                    t4: i32 = Constant<12>
+                    t5: i32 = Constant<0>
+                    t5: i32 = Constant<0>
+        t5: i32 = Constant<0>
+        t14: i32 = sign_extend t19, model/ia/other/ia_utils.codal:86:16 @[ model/share/isa/isa.codal:359:55 @[ model/share/isa/isa.codal:2161:5 ] ]
+            t19: i8,ch = mem_read t0, t11, Constant:i32<0>, se_instrsem.c:277:20 @[ model/ia/other/ia_utils.codal:82:24 @[ model/share/isa/isa.codal:359:55 @[ model/share/isa/isa.codal:2161:5 ] ] ]
+                t0: ch = EntryToken
+                t11: i32 = add t20, t6, model/share/isa/isa.codal:358:118 @[ model/share/isa/isa.codal:2161:5 ]
+                    t20: i32 = regop_read Constant:i32<2>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:358:57 @[ model/share/isa/isa.codal:2161:5 ] ]
+                        t9: i32 = Constant<2>
+                    t6: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:2158:18 ] ]
+                        t2: i32 = Constant<1>
+                        t3: i1 = Constant<-1>
+                        t4: i32 = Constant<12>
+                        t5: i32 = Constant<0>
+                        t5: i32 = Constant<0>
+        t3: i1 = Constant<-1>
+
+i_itype_loads__opc_lbu__x_0__simm12__x_0__
+t9: ch = ret t10:1, model/share/isa/isa.codal:2172:1
+    t10: i8,ch = mem_read t0, t5, Constant:i32<0>, se_instrsem.c:277:20 @[ model/ia/other/ia_utils.codal:82:24 @[ model/share/isa/isa.codal:359:55 @[ model/share/isa/isa.codal:2171:5 ] ] ]
+        t0: ch = EntryToken
+        t5: i32 = immop_read Constant:i32<0>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:2169:18 ] ]
+            t2: i32 = Constant<0>
+            t3: i1 = Constant<-1>
+            t4: i32 = Constant<12>
+            t2: i32 = Constant<0>
+            t2: i32 = Constant<0>
+
+i_itype_loads__opc_lbu__x_0__simm12__xpr_general__
+t13: ch = ret t14:1, model/share/isa/isa.codal:2183:1
+    t14: i8,ch = mem_read t0, t10, Constant:i32<0>, se_instrsem.c:277:20 @[ model/ia/other/ia_utils.codal:82:24 @[ model/share/isa/isa.codal:359:55 @[ model/share/isa/isa.codal:2182:5 ] ] ]
+        t0: ch = EntryToken
+        t10: i32 = add t15, t5, model/share/isa/isa.codal:358:118 @[ model/share/isa/isa.codal:2182:5 ]
+            t15: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:358:57 @[ model/share/isa/isa.codal:2182:5 ] ]
+                t8: i32 = Constant<1>
+            t5: i32 = immop_read Constant:i32<0>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:2179:18 ] ]
+                t2: i32 = Constant<0>
+                t3: i1 = Constant<-1>
+                t4: i32 = Constant<12>
+                t2: i32 = Constant<0>
+                t2: i32 = Constant<0>
+
+i_itype_loads__opc_lbu__xpr_general__simm12__x_0__
+t13: ch = ret t14, model/share/isa/isa.codal:2194:1
+    t14: ch = regop_write t15:1, Constant:i32<0>, t10, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:360:5 @[ model/share/isa/isa.codal:2193:5 ] ]
+        t15: i8,ch = mem_read t0, t6, Constant:i32<0>, se_instrsem.c:277:20 @[ model/ia/other/ia_utils.codal:82:24 @[ model/share/isa/isa.codal:359:55 @[ model/share/isa/isa.codal:2193:5 ] ] ]
+            t0: ch = EntryToken
+            t6: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:2191:18 ] ]
+                t2: i32 = Constant<1>
+                t3: i1 = Constant<-1>
+                t4: i32 = Constant<12>
+                t5: i32 = Constant<0>
+                t5: i32 = Constant<0>
+        t5: i32 = Constant<0>
+        t10: i32 = zero_extend t15, se_instrsem.c:277:13 @[ model/ia/other/ia_utils.codal:82:24 @[ model/share/isa/isa.codal:359:55 @[ model/share/isa/isa.codal:2193:5 ] ] ]
+            t15: i8,ch = mem_read t0, t6, Constant:i32<0>, se_instrsem.c:277:20 @[ model/ia/other/ia_utils.codal:82:24 @[ model/share/isa/isa.codal:359:55 @[ model/share/isa/isa.codal:2193:5 ] ] ]
+                t0: ch = EntryToken
+                t6: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:2191:18 ] ]
+                    t2: i32 = Constant<1>
+                    t3: i1 = Constant<-1>
+                    t4: i32 = Constant<12>
+                    t5: i32 = Constant<0>
+                    t5: i32 = Constant<0>
+        t3: i1 = Constant<-1>
+
+i_itype_loads__opc_lbu__xpr_general__simm12__xpr_general__
+t17: ch = ret t18, model/share/isa/isa.codal:2206:1
+    t18: ch = regop_write t19:1, Constant:i32<0>, t14, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:360:5 @[ model/share/isa/isa.codal:2205:5 ] ]
+        t19: i8,ch = mem_read t0, t11, Constant:i32<0>, se_instrsem.c:277:20 @[ model/ia/other/ia_utils.codal:82:24 @[ model/share/isa/isa.codal:359:55 @[ model/share/isa/isa.codal:2205:5 ] ] ]
+            t0: ch = EntryToken
+            t11: i32 = add t20, t6, model/share/isa/isa.codal:358:118 @[ model/share/isa/isa.codal:2205:5 ]
+                t20: i32 = regop_read Constant:i32<2>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:358:57 @[ model/share/isa/isa.codal:2205:5 ] ]
+                    t9: i32 = Constant<2>
+                t6: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:2202:18 ] ]
+                    t2: i32 = Constant<1>
+                    t3: i1 = Constant<-1>
+                    t4: i32 = Constant<12>
+                    t5: i32 = Constant<0>
+                    t5: i32 = Constant<0>
+        t5: i32 = Constant<0>
+        t14: i32 = zero_extend t19, se_instrsem.c:277:13 @[ model/ia/other/ia_utils.codal:82:24 @[ model/share/isa/isa.codal:359:55 @[ model/share/isa/isa.codal:2205:5 ] ] ]
+            t19: i8,ch = mem_read t0, t11, Constant:i32<0>, se_instrsem.c:277:20 @[ model/ia/other/ia_utils.codal:82:24 @[ model/share/isa/isa.codal:359:55 @[ model/share/isa/isa.codal:2205:5 ] ] ]
+                t0: ch = EntryToken
+                t11: i32 = add t20, t6, model/share/isa/isa.codal:358:118 @[ model/share/isa/isa.codal:2205:5 ]
+                    t20: i32 = regop_read Constant:i32<2>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:358:57 @[ model/share/isa/isa.codal:2205:5 ] ]
+                        t9: i32 = Constant<2>
+                    t6: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:2202:18 ] ]
+                        t2: i32 = Constant<1>
+                        t3: i1 = Constant<-1>
+                        t4: i32 = Constant<12>
+                        t5: i32 = Constant<0>
+                        t5: i32 = Constant<0>
+        t3: i1 = Constant<-1>
+
+i_itype_loads__opc_lh__x_0__simm12__x_0__
+t9: ch = ret t10:1, model/share/isa/isa.codal:2216:1
+    t10: i16,ch = mem_read t0, t5, Constant:i32<0>, se_instrsem.c:281:20 @[ model/ia/other/ia_utils.codal:82:24 @[ model/share/isa/isa.codal:359:55 @[ model/share/isa/isa.codal:2215:5 ] ] ]
+        t0: ch = EntryToken
+        t5: i32 = immop_read Constant:i32<0>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:2213:18 ] ]
+            t2: i32 = Constant<0>
+            t3: i1 = Constant<-1>
+            t4: i32 = Constant<12>
+            t2: i32 = Constant<0>
+            t2: i32 = Constant<0>
+
+i_itype_loads__opc_lh__x_0__simm12__xpr_general__
+t13: ch = ret t14:1, model/share/isa/isa.codal:2227:1
+    t14: i16,ch = mem_read t0, t10, Constant:i32<0>, se_instrsem.c:281:20 @[ model/ia/other/ia_utils.codal:82:24 @[ model/share/isa/isa.codal:359:55 @[ model/share/isa/isa.codal:2226:5 ] ] ]
+        t0: ch = EntryToken
+        t10: i32 = add t15, t5, model/share/isa/isa.codal:358:118 @[ model/share/isa/isa.codal:2226:5 ]
+            t15: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:358:57 @[ model/share/isa/isa.codal:2226:5 ] ]
+                t8: i32 = Constant<1>
+            t5: i32 = immop_read Constant:i32<0>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:2223:18 ] ]
+                t2: i32 = Constant<0>
+                t3: i1 = Constant<-1>
+                t4: i32 = Constant<12>
+                t2: i32 = Constant<0>
+                t2: i32 = Constant<0>
+
+i_itype_loads__opc_lh__xpr_general__simm12__x_0__
+t13: ch = ret t14, model/share/isa/isa.codal:2238:1
+    t14: ch = regop_write t15:1, Constant:i32<0>, t10, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:360:5 @[ model/share/isa/isa.codal:2237:5 ] ]
+        t15: i16,ch = mem_read t0, t6, Constant:i32<0>, se_instrsem.c:281:20 @[ model/ia/other/ia_utils.codal:82:24 @[ model/share/isa/isa.codal:359:55 @[ model/share/isa/isa.codal:2237:5 ] ] ]
+            t0: ch = EntryToken
+            t6: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:2235:18 ] ]
+                t2: i32 = Constant<1>
+                t3: i1 = Constant<-1>
+                t4: i32 = Constant<12>
+                t5: i32 = Constant<0>
+                t5: i32 = Constant<0>
+        t5: i32 = Constant<0>
+        t10: i32 = sign_extend t15, model/ia/other/ia_utils.codal:88:16 @[ model/share/isa/isa.codal:359:55 @[ model/share/isa/isa.codal:2237:5 ] ]
+            t15: i16,ch = mem_read t0, t6, Constant:i32<0>, se_instrsem.c:281:20 @[ model/ia/other/ia_utils.codal:82:24 @[ model/share/isa/isa.codal:359:55 @[ model/share/isa/isa.codal:2237:5 ] ] ]
+                t0: ch = EntryToken
+                t6: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:2235:18 ] ]
+                    t2: i32 = Constant<1>
+                    t3: i1 = Constant<-1>
+                    t4: i32 = Constant<12>
+                    t5: i32 = Constant<0>
+                    t5: i32 = Constant<0>
+        t3: i1 = Constant<-1>
+
+i_itype_loads__opc_lh__xpr_general__simm12__xpr_general__
+t17: ch = ret t18, model/share/isa/isa.codal:2250:1
+    t18: ch = regop_write t19:1, Constant:i32<0>, t14, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:360:5 @[ model/share/isa/isa.codal:2249:5 ] ]
+        t19: i16,ch = mem_read t0, t11, Constant:i32<0>, se_instrsem.c:281:20 @[ model/ia/other/ia_utils.codal:82:24 @[ model/share/isa/isa.codal:359:55 @[ model/share/isa/isa.codal:2249:5 ] ] ]
+            t0: ch = EntryToken
+            t11: i32 = add t20, t6, model/share/isa/isa.codal:358:118 @[ model/share/isa/isa.codal:2249:5 ]
+                t20: i32 = regop_read Constant:i32<2>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:358:57 @[ model/share/isa/isa.codal:2249:5 ] ]
+                    t9: i32 = Constant<2>
+                t6: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:2246:18 ] ]
+                    t2: i32 = Constant<1>
+                    t3: i1 = Constant<-1>
+                    t4: i32 = Constant<12>
+                    t5: i32 = Constant<0>
+                    t5: i32 = Constant<0>
+        t5: i32 = Constant<0>
+        t14: i32 = sign_extend t19, model/ia/other/ia_utils.codal:88:16 @[ model/share/isa/isa.codal:359:55 @[ model/share/isa/isa.codal:2249:5 ] ]
+            t19: i16,ch = mem_read t0, t11, Constant:i32<0>, se_instrsem.c:281:20 @[ model/ia/other/ia_utils.codal:82:24 @[ model/share/isa/isa.codal:359:55 @[ model/share/isa/isa.codal:2249:5 ] ] ]
+                t0: ch = EntryToken
+                t11: i32 = add t20, t6, model/share/isa/isa.codal:358:118 @[ model/share/isa/isa.codal:2249:5 ]
+                    t20: i32 = regop_read Constant:i32<2>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:358:57 @[ model/share/isa/isa.codal:2249:5 ] ]
+                        t9: i32 = Constant<2>
+                    t6: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:2246:18 ] ]
+                        t2: i32 = Constant<1>
+                        t3: i1 = Constant<-1>
+                        t4: i32 = Constant<12>
+                        t5: i32 = Constant<0>
+                        t5: i32 = Constant<0>
+        t3: i1 = Constant<-1>
+
+i_itype_loads__opc_lhu__x_0__simm12__x_0__
+t9: ch = ret t10:1, model/share/isa/isa.codal:2260:1
+    t10: i16,ch = mem_read t0, t5, Constant:i32<0>, se_instrsem.c:281:20 @[ model/ia/other/ia_utils.codal:82:24 @[ model/share/isa/isa.codal:359:55 @[ model/share/isa/isa.codal:2259:5 ] ] ]
+        t0: ch = EntryToken
+        t5: i32 = immop_read Constant:i32<0>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:2257:18 ] ]
+            t2: i32 = Constant<0>
+            t3: i1 = Constant<-1>
+            t4: i32 = Constant<12>
+            t2: i32 = Constant<0>
+            t2: i32 = Constant<0>
+
+i_itype_loads__opc_lhu__x_0__simm12__xpr_general__
+t13: ch = ret t14:1, model/share/isa/isa.codal:2271:1
+    t14: i16,ch = mem_read t0, t10, Constant:i32<0>, se_instrsem.c:281:20 @[ model/ia/other/ia_utils.codal:82:24 @[ model/share/isa/isa.codal:359:55 @[ model/share/isa/isa.codal:2270:5 ] ] ]
+        t0: ch = EntryToken
+        t10: i32 = add t15, t5, model/share/isa/isa.codal:358:118 @[ model/share/isa/isa.codal:2270:5 ]
+            t15: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:358:57 @[ model/share/isa/isa.codal:2270:5 ] ]
+                t8: i32 = Constant<1>
+            t5: i32 = immop_read Constant:i32<0>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:2267:18 ] ]
+                t2: i32 = Constant<0>
+                t3: i1 = Constant<-1>
+                t4: i32 = Constant<12>
+                t2: i32 = Constant<0>
+                t2: i32 = Constant<0>
+
+i_itype_loads__opc_lhu__xpr_general__simm12__x_0__
+t13: ch = ret t14, model/share/isa/isa.codal:2282:1
+    t14: ch = regop_write t15:1, Constant:i32<0>, t10, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:360:5 @[ model/share/isa/isa.codal:2281:5 ] ]
+        t15: i16,ch = mem_read t0, t6, Constant:i32<0>, se_instrsem.c:281:20 @[ model/ia/other/ia_utils.codal:82:24 @[ model/share/isa/isa.codal:359:55 @[ model/share/isa/isa.codal:2281:5 ] ] ]
+            t0: ch = EntryToken
+            t6: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:2279:18 ] ]
+                t2: i32 = Constant<1>
+                t3: i1 = Constant<-1>
+                t4: i32 = Constant<12>
+                t5: i32 = Constant<0>
+                t5: i32 = Constant<0>
+        t5: i32 = Constant<0>
+        t10: i32 = zero_extend t15, se_instrsem.c:281:13 @[ model/ia/other/ia_utils.codal:82:24 @[ model/share/isa/isa.codal:359:55 @[ model/share/isa/isa.codal:2281:5 ] ] ]
+            t15: i16,ch = mem_read t0, t6, Constant:i32<0>, se_instrsem.c:281:20 @[ model/ia/other/ia_utils.codal:82:24 @[ model/share/isa/isa.codal:359:55 @[ model/share/isa/isa.codal:2281:5 ] ] ]
+                t0: ch = EntryToken
+                t6: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:2279:18 ] ]
+                    t2: i32 = Constant<1>
+                    t3: i1 = Constant<-1>
+                    t4: i32 = Constant<12>
+                    t5: i32 = Constant<0>
+                    t5: i32 = Constant<0>
+        t3: i1 = Constant<-1>
+
+i_itype_loads__opc_lhu__xpr_general__simm12__xpr_general__
+t17: ch = ret t18, model/share/isa/isa.codal:2294:1
+    t18: ch = regop_write t19:1, Constant:i32<0>, t14, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:360:5 @[ model/share/isa/isa.codal:2293:5 ] ]
+        t19: i16,ch = mem_read t0, t11, Constant:i32<0>, se_instrsem.c:281:20 @[ model/ia/other/ia_utils.codal:82:24 @[ model/share/isa/isa.codal:359:55 @[ model/share/isa/isa.codal:2293:5 ] ] ]
+            t0: ch = EntryToken
+            t11: i32 = add t20, t6, model/share/isa/isa.codal:358:118 @[ model/share/isa/isa.codal:2293:5 ]
+                t20: i32 = regop_read Constant:i32<2>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:358:57 @[ model/share/isa/isa.codal:2293:5 ] ]
+                    t9: i32 = Constant<2>
+                t6: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:2290:18 ] ]
+                    t2: i32 = Constant<1>
+                    t3: i1 = Constant<-1>
+                    t4: i32 = Constant<12>
+                    t5: i32 = Constant<0>
+                    t5: i32 = Constant<0>
+        t5: i32 = Constant<0>
+        t14: i32 = zero_extend t19, se_instrsem.c:281:13 @[ model/ia/other/ia_utils.codal:82:24 @[ model/share/isa/isa.codal:359:55 @[ model/share/isa/isa.codal:2293:5 ] ] ]
+            t19: i16,ch = mem_read t0, t11, Constant:i32<0>, se_instrsem.c:281:20 @[ model/ia/other/ia_utils.codal:82:24 @[ model/share/isa/isa.codal:359:55 @[ model/share/isa/isa.codal:2293:5 ] ] ]
+                t0: ch = EntryToken
+                t11: i32 = add t20, t6, model/share/isa/isa.codal:358:118 @[ model/share/isa/isa.codal:2293:5 ]
+                    t20: i32 = regop_read Constant:i32<2>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:358:57 @[ model/share/isa/isa.codal:2293:5 ] ]
+                        t9: i32 = Constant<2>
+                    t6: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:2290:18 ] ]
+                        t2: i32 = Constant<1>
+                        t3: i1 = Constant<-1>
+                        t4: i32 = Constant<12>
+                        t5: i32 = Constant<0>
+                        t5: i32 = Constant<0>
+        t3: i1 = Constant<-1>
+
+i_itype_loads__opc_lw__x_0__simm12__x_0__
+t9: ch = ret t10:1, model/share/isa/isa.codal:2304:1
+    t10: i32,ch = mem_read t0, t5, Constant:i32<0>, se_instrsem.c:289:20 @[ model/ia/other/ia_utils.codal:82:24 @[ model/share/isa/isa.codal:359:55 @[ model/share/isa/isa.codal:2303:5 ] ] ]
+        t0: ch = EntryToken
+        t5: i32 = immop_read Constant:i32<0>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:2301:18 ] ]
+            t2: i32 = Constant<0>
+            t3: i1 = Constant<-1>
+            t4: i32 = Constant<12>
+            t2: i32 = Constant<0>
+            t2: i32 = Constant<0>
+
+i_itype_loads__opc_lw__x_0__simm12__xpr_general__
+t13: ch = ret t14:1, model/share/isa/isa.codal:2315:1
+    t14: i32,ch = mem_read t0, t10, Constant:i32<0>, se_instrsem.c:289:20 @[ model/ia/other/ia_utils.codal:82:24 @[ model/share/isa/isa.codal:359:55 @[ model/share/isa/isa.codal:2314:5 ] ] ]
+        t0: ch = EntryToken
+        t10: i32 = add t15, t5, model/share/isa/isa.codal:358:118 @[ model/share/isa/isa.codal:2314:5 ]
+            t15: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:358:57 @[ model/share/isa/isa.codal:2314:5 ] ]
+                t8: i32 = Constant<1>
+            t5: i32 = immop_read Constant:i32<0>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:2311:18 ] ]
+                t2: i32 = Constant<0>
+                t3: i1 = Constant<-1>
+                t4: i32 = Constant<12>
+                t2: i32 = Constant<0>
+                t2: i32 = Constant<0>
+
+i_itype_loads__opc_lw__xpr_general__simm12__x_0__
+t12: ch = ret t13, model/share/isa/isa.codal:2326:1
+    t13: ch = regop_write t14:1, Constant:i32<0>, t14, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:360:5 @[ model/share/isa/isa.codal:2325:5 ] ]
+        t14: i32,ch = mem_read t0, t6, Constant:i32<0>, se_instrsem.c:289:20 @[ model/ia/other/ia_utils.codal:82:24 @[ model/share/isa/isa.codal:359:55 @[ model/share/isa/isa.codal:2325:5 ] ] ]
+            t0: ch = EntryToken
+            t6: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:2323:18 ] ]
+                t2: i32 = Constant<1>
+                t3: i1 = Constant<-1>
+                t4: i32 = Constant<12>
+                t5: i32 = Constant<0>
+                t5: i32 = Constant<0>
+        t5: i32 = Constant<0>
+        t14: i32,ch = mem_read t0, t6, Constant:i32<0>, se_instrsem.c:289:20 @[ model/ia/other/ia_utils.codal:82:24 @[ model/share/isa/isa.codal:359:55 @[ model/share/isa/isa.codal:2325:5 ] ] ]
+            t0: ch = EntryToken
+            t6: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:2323:18 ] ]
+                t2: i32 = Constant<1>
+                t3: i1 = Constant<-1>
+                t4: i32 = Constant<12>
+                t5: i32 = Constant<0>
+                t5: i32 = Constant<0>
+        t3: i1 = Constant<-1>
+
+i_itype_loads__opc_lw__xpr_general__simm12__xpr_general__
+t16: ch = ret t17, model/share/isa/isa.codal:2338:1
+    t17: ch = regop_write t18:1, Constant:i32<0>, t18, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:360:5 @[ model/share/isa/isa.codal:2337:5 ] ]
+        t18: i32,ch = mem_read t0, t11, Constant:i32<0>, se_instrsem.c:289:20 @[ model/ia/other/ia_utils.codal:82:24 @[ model/share/isa/isa.codal:359:55 @[ model/share/isa/isa.codal:2337:5 ] ] ]
+            t0: ch = EntryToken
+            t11: i32 = add t19, t6, model/share/isa/isa.codal:358:118 @[ model/share/isa/isa.codal:2337:5 ]
+                t19: i32 = regop_read Constant:i32<2>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:358:57 @[ model/share/isa/isa.codal:2337:5 ] ]
+                    t9: i32 = Constant<2>
+                t6: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:2334:18 ] ]
+                    t2: i32 = Constant<1>
+                    t3: i1 = Constant<-1>
+                    t4: i32 = Constant<12>
+                    t5: i32 = Constant<0>
+                    t5: i32 = Constant<0>
+        t5: i32 = Constant<0>
+        t18: i32,ch = mem_read t0, t11, Constant:i32<0>, se_instrsem.c:289:20 @[ model/ia/other/ia_utils.codal:82:24 @[ model/share/isa/isa.codal:359:55 @[ model/share/isa/isa.codal:2337:5 ] ] ]
+            t0: ch = EntryToken
+            t11: i32 = add t19, t6, model/share/isa/isa.codal:358:118 @[ model/share/isa/isa.codal:2337:5 ]
+                t19: i32 = regop_read Constant:i32<2>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:358:57 @[ model/share/isa/isa.codal:2337:5 ] ]
+                    t9: i32 = Constant<2>
+                t6: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:2334:18 ] ]
+                    t2: i32 = Constant<1>
+                    t3: i1 = Constant<-1>
+                    t4: i32 = Constant<12>
+                    t5: i32 = Constant<0>
+                    t5: i32 = Constant<0>
+        t3: i1 = Constant<-1>
+
+i_jal_abs_calias__opc_jal__x_0__relative_addr20__
+t9: ch = ret t10, model/share/isa/isa.codal:2347:1
+    t10: ch = jump t0, t6, Constant:i1<-1>, model/ia/other/ia_utils.codal:147:6 @[ model/share/isa/isa.codal:951:9 @[ model/share/isa/isa.codal:2346:5 ] ]
+        t0: ch = EntryToken
+        t6: i32 = immop_read Constant:i32<0>, Constant:i1<-1>, Constant:i32<21>, Constant:i32<1>, Constant:i32<0>, model/share/isa/isa.codal:988:21 @[ model/share/isa/isa.codal:3728:94 @[ model/share/isa/isa.codal:2345:18 ] ]
+            t2: i32 = Constant<0>
+            t3: i1 = Constant<-1>
+            t4: i32 = Constant<21>
+            t5: i32 = Constant<1>
+            t2: i32 = Constant<0>
+        t3: i1 = Constant<-1>
+
+i_jal_abs_calias__opc_jal__xpr_general__relative_addr20__
+t13: ch = ret t14, model/share/isa/isa.codal:2357:1
+    t14: ch = jump t15, t6, Constant:i1<-1>, model/ia/other/ia_utils.codal:147:6 @[ model/share/isa/isa.codal:951:9 @[ model/share/isa/isa.codal:2356:5 ] ]
+        t15: ch = regop_write t0, Constant:i32<0>, get_pc:i32, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:950:9 @[ model/share/isa/isa.codal:2356:5 ] ]
+            t0: ch = EntryToken
+            t5: i32 = Constant<0>
+            t16: i32 = get_pc, model/ia/other/ia_utils.codal:141:8 @[ model/share/isa/isa.codal:950:26 @[ model/share/isa/isa.codal:2356:5 ] ]
+            t3: i1 = Constant<-1>
+        t6: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<21>, Constant:i32<1>, Constant:i32<0>, model/share/isa/isa.codal:988:21 @[ model/share/isa/isa.codal:3728:94 @[ model/share/isa/isa.codal:2355:18 ] ]
+            t2: i32 = Constant<1>
+            t3: i1 = Constant<-1>
+            t4: i32 = Constant<21>
+            t2: i32 = Constant<1>
+            t5: i32 = Constant<0>
+        t3: i1 = Constant<-1>
+
+i_jtype_jlink__opc_jal__x_0__relative_addr20__
+t14: ch = ret t17, model/share/isa/isa.codal:2366:1
+    t17: ch = jump t0, t16, Constant:i1<-1>, model/ia/other/ia_utils.codal:147:6 @[ model/share/isa/isa.codal:464:9 @[ model/share/isa/isa.codal:2365:5 ] ]
+        t0: ch = EntryToken
+        t16: i32 = add t15, Constant:i32<-4>, model/share/isa/isa.codal:463:190 @[ model/share/isa/isa.codal:2365:5 ]
+            t15: i32 = add get_pc:i32, t6, model/share/isa/isa.codal:463:123 @[ model/share/isa/isa.codal:2365:5 ]
+                t18: i32 = get_pc, model/ia/other/ia_utils.codal:141:8 @[ model/share/isa/isa.codal:461:64 @[ model/share/isa/isa.codal:2365:5 ] ]
+                t6: i32 = immop_read Constant:i32<0>, Constant:i1<-1>, Constant:i32<21>, Constant:i32<1>, Constant:i32<0>, model/share/isa/isa.codal:988:21 @[ model/share/isa/isa.codal:3728:94 @[ model/share/isa/isa.codal:2364:18 ] ]
+                    t2: i32 = Constant<0>
+                    t3: i1 = Constant<-1>
+                    t4: i32 = Constant<21>
+                    t5: i32 = Constant<1>
+                    t2: i32 = Constant<0>
+            t9: i32 = Constant<-4>
+        t3: i1 = Constant<-1>
+
+i_jtype_jlink__opc_jal__xpr_general__relative_addr20__
+t16: ch = ret t19, model/share/isa/isa.codal:2376:1
+    t19: ch = jump t20, t18, Constant:i1<-1>, model/ia/other/ia_utils.codal:147:6 @[ model/share/isa/isa.codal:464:9 @[ model/share/isa/isa.codal:2375:5 ] ]
+        t20: ch = regop_write t0, Constant:i32<0>, get_pc:i32, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:462:9 @[ model/share/isa/isa.codal:2375:5 ] ]
+            t0: ch = EntryToken
+            t5: i32 = Constant<0>
+            t21: i32 = get_pc, model/ia/other/ia_utils.codal:141:8 @[ model/share/isa/isa.codal:461:64 @[ model/share/isa/isa.codal:2375:5 ] ]
+            t3: i1 = Constant<-1>
+        t18: i32 = add t17, Constant:i32<-4>, model/share/isa/isa.codal:463:190 @[ model/share/isa/isa.codal:2375:5 ]
+            t17: i32 = add get_pc:i32, t6, model/share/isa/isa.codal:463:123 @[ model/share/isa/isa.codal:2375:5 ]
+                t21: i32 = get_pc, model/ia/other/ia_utils.codal:141:8 @[ model/share/isa/isa.codal:461:64 @[ model/share/isa/isa.codal:2375:5 ] ]
+                t6: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<21>, Constant:i32<1>, Constant:i32<0>, model/share/isa/isa.codal:988:21 @[ model/share/isa/isa.codal:3728:94 @[ model/share/isa/isa.codal:2374:18 ] ]
+                    t2: i32 = Constant<1>
+                    t3: i1 = Constant<-1>
+                    t4: i32 = Constant<21>
+                    t2: i32 = Constant<1>
+                    t5: i32 = Constant<0>
+            t11: i32 = Constant<-4>
+        t3: i1 = Constant<-1>
+
+i_nop_alias__
+t3: ch = ret t2, model/share/isa/isa.codal:2381:1
+    t2: ch = nop t0
+        t0: ch = EntryToken
+
+i_ret_alias__
+t8: ch = ret t9, model/share/isa/isa.codal:2386:1
+    t9: ch = jump t0, t10, Constant:i1<-1>, model/ia/other/ia_utils.codal:147:6 @[ model/share/isa/isa.codal:882:5 @[ model/share/isa/isa.codal:2385:5 ] ]
+        t0: ch = EntryToken
+        t10: i32 = reg_read Constant:i32<0>, Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:880:60 @[ model/share/isa/isa.codal:2385:5 ] ]
+            t2: i32 = Constant<0>
+            t3: i32 = Constant<1>
+        t6: i1 = Constant<-1>
+
+i_rtype_alu__opc_add__x_0__x_0__x_0__
+t1: ch = ret t0, model/share/isa/isa.codal:2395:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_add__x_0__x_0__xpr_general__
+t1: ch = ret t0, model/share/isa/isa.codal:2405:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_add__x_0__xpr_general__x_0__
+t1: ch = ret t0, model/share/isa/isa.codal:2415:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_add__x_0__xpr_general__xpr_general__
+t1: ch = ret t0, model/share/isa/isa.codal:2426:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_add__xpr_general__x_0__x_0__
+t6: ch = ret t7, model/share/isa/isa.codal:2436:1
+    t7: ch = regop_write t0, Constant:i32<0>, Constant:i32<0>, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:2435:5 ] ]
+        t0: ch = EntryToken
+        t3: i32 = Constant<0>
+        t3: i32 = Constant<0>
+        t4: i1 = Constant<-1>
+
+i_rtype_alu__opc_add__xpr_general__x_0__xpr_general__
+t8: ch = ret t9, model/share/isa/isa.codal:2447:1
+    t9: ch = regop_write t0, Constant:i32<0>, t10, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:2446:5 ] ]
+        t0: ch = EntryToken
+        t5: i32 = Constant<0>
+        t10: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:177:51 @[ model/share/isa/isa.codal:2446:5 ] ]
+            t2: i32 = Constant<1>
+        t6: i1 = Constant<-1>
+
+i_rtype_alu__opc_add__xpr_general__xpr_general__x_0__
+t8: ch = ret t9, model/share/isa/isa.codal:2458:1
+    t9: ch = regop_write t0, Constant:i32<0>, t10, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:2457:5 ] ]
+        t0: ch = EntryToken
+        t5: i32 = Constant<0>
+        t10: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:176:51 @[ model/share/isa/isa.codal:2457:5 ] ]
+            t2: i32 = Constant<1>
+        t6: i1 = Constant<-1>
+
+i_rtype_alu__opc_add__xpr_general__xpr_general__xpr_general__
+t11: ch = ret t12, model/share/isa/isa.codal:2470:1
+    t12: ch = regop_write t0, Constant:i32<0>, t6, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:2469:5 ] ]
+        t0: ch = EntryToken
+        t8: i32 = Constant<0>
+        t6: i32 = add t13, t14, model/share/isa/isa.codal:187:106 @[ model/share/isa/isa.codal:2469:5 ]
+            t13: i32 = regop_read Constant:i32<2>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:177:51 @[ model/share/isa/isa.codal:2469:5 ] ]
+                t4: i32 = Constant<2>
+            t14: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:176:51 @[ model/share/isa/isa.codal:2469:5 ] ]
+                t2: i32 = Constant<1>
+        t9: i1 = Constant<-1>
+
+i_rtype_alu__opc_and__x_0__x_0__x_0__
+t1: ch = ret t0, model/share/isa/isa.codal:2479:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_and__x_0__x_0__xpr_general__
+t1: ch = ret t0, model/share/isa/isa.codal:2489:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_and__x_0__xpr_general__x_0__
+t1: ch = ret t0, model/share/isa/isa.codal:2499:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_and__x_0__xpr_general__xpr_general__
+t1: ch = ret t0, model/share/isa/isa.codal:2510:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_and__xpr_general__x_0__x_0__
+t6: ch = ret t7, model/share/isa/isa.codal:2520:1
+    t7: ch = regop_write t0, Constant:i32<0>, Constant:i32<0>, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:2519:5 ] ]
+        t0: ch = EntryToken
+        t3: i32 = Constant<0>
+        t3: i32 = Constant<0>
+        t4: i1 = Constant<-1>
+
+i_rtype_alu__opc_and__xpr_general__x_0__xpr_general__
+t6: ch = ret t7, model/share/isa/isa.codal:2531:1
+    t7: ch = regop_write t0, Constant:i32<0>, Constant:i32<0>, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:2530:5 ] ]
+        t0: ch = EntryToken
+        t3: i32 = Constant<0>
+        t3: i32 = Constant<0>
+        t4: i1 = Constant<-1>
+
+i_rtype_alu__opc_and__xpr_general__xpr_general__x_0__
+t6: ch = ret t7, model/share/isa/isa.codal:2542:1
+    t7: ch = regop_write t0, Constant:i32<0>, Constant:i32<0>, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:2541:5 ] ]
+        t0: ch = EntryToken
+        t3: i32 = Constant<0>
+        t3: i32 = Constant<0>
+        t4: i1 = Constant<-1>
+
+i_rtype_alu__opc_and__xpr_general__xpr_general__xpr_general__
+t11: ch = ret t12, model/share/isa/isa.codal:2554:1
+    t12: ch = regop_write t0, Constant:i32<0>, t6, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:2553:5 ] ]
+        t0: ch = EntryToken
+        t8: i32 = Constant<0>
+        t6: i32 = and t13, t14, model/share/isa/isa.codal:216:106 @[ model/share/isa/isa.codal:2553:5 ]
+            t13: i32 = regop_read Constant:i32<2>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:177:51 @[ model/share/isa/isa.codal:2553:5 ] ]
+                t4: i32 = Constant<2>
+            t14: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:176:51 @[ model/share/isa/isa.codal:2553:5 ] ]
+                t2: i32 = Constant<1>
+        t9: i1 = Constant<-1>
+
+i_rtype_alu__opc_or__x_0__x_0__x_0__
+t1: ch = ret t0, model/share/isa/isa.codal:2563:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_or__x_0__x_0__xpr_general__
+t1: ch = ret t0, model/share/isa/isa.codal:2573:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_or__x_0__xpr_general__x_0__
+t1: ch = ret t0, model/share/isa/isa.codal:2583:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_or__x_0__xpr_general__xpr_general__
+t1: ch = ret t0, model/share/isa/isa.codal:2594:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_or__xpr_general__x_0__x_0__
+t6: ch = ret t7, model/share/isa/isa.codal:2604:1
+    t7: ch = regop_write t0, Constant:i32<0>, Constant:i32<0>, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:2603:5 ] ]
+        t0: ch = EntryToken
+        t3: i32 = Constant<0>
+        t3: i32 = Constant<0>
+        t4: i1 = Constant<-1>
+
+i_rtype_alu__opc_or__xpr_general__x_0__xpr_general__
+t8: ch = ret t9, model/share/isa/isa.codal:2615:1
+    t9: ch = regop_write t0, Constant:i32<0>, t10, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:2614:5 ] ]
+        t0: ch = EntryToken
+        t5: i32 = Constant<0>
+        t10: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:177:51 @[ model/share/isa/isa.codal:2614:5 ] ]
+            t2: i32 = Constant<1>
+        t6: i1 = Constant<-1>
+
+i_rtype_alu__opc_or__xpr_general__xpr_general__x_0__
+t8: ch = ret t9, model/share/isa/isa.codal:2626:1
+    t9: ch = regop_write t0, Constant:i32<0>, t10, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:2625:5 ] ]
+        t0: ch = EntryToken
+        t5: i32 = Constant<0>
+        t10: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:176:51 @[ model/share/isa/isa.codal:2625:5 ] ]
+            t2: i32 = Constant<1>
+        t6: i1 = Constant<-1>
+
+i_rtype_alu__opc_or__xpr_general__xpr_general__xpr_general__
+t11: ch = ret t12, model/share/isa/isa.codal:2638:1
+    t12: ch = regop_write t0, Constant:i32<0>, t6, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:2637:5 ] ]
+        t0: ch = EntryToken
+        t8: i32 = Constant<0>
+        t6: i32 = or t13, t14, model/share/isa/isa.codal:213:106 @[ model/share/isa/isa.codal:2637:5 ]
+            t13: i32 = regop_read Constant:i32<2>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:177:51 @[ model/share/isa/isa.codal:2637:5 ] ]
+                t4: i32 = Constant<2>
+            t14: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:176:51 @[ model/share/isa/isa.codal:2637:5 ] ]
+                t2: i32 = Constant<1>
+        t9: i1 = Constant<-1>
+
+i_rtype_alu__opc_sll__x_0__x_0__x_0__
+t1: ch = ret t0, model/share/isa/isa.codal:2647:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_sll__x_0__x_0__xpr_general__
+t1: ch = ret t0, model/share/isa/isa.codal:2657:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_sll__x_0__xpr_general__x_0__
+t1: ch = ret t0, model/share/isa/isa.codal:2667:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_sll__x_0__xpr_general__xpr_general__
+t1: ch = ret t0, model/share/isa/isa.codal:2678:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_sll__xpr_general__x_0__x_0__
+t6: ch = ret t7, model/share/isa/isa.codal:2688:1
+    t7: ch = regop_write t0, Constant:i32<0>, Constant:i32<0>, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:2687:5 ] ]
+        t0: ch = EntryToken
+        t3: i32 = Constant<0>
+        t3: i32 = Constant<0>
+        t4: i1 = Constant<-1>
+
+i_rtype_alu__opc_sll__xpr_general__x_0__xpr_general__
+t6: ch = ret t7, model/share/isa/isa.codal:2699:1
+    t7: ch = regop_write t0, Constant:i32<0>, Constant:i32<0>, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:2698:5 ] ]
+        t0: ch = EntryToken
+        t3: i32 = Constant<0>
+        t3: i32 = Constant<0>
+        t4: i1 = Constant<-1>
+
+i_rtype_alu__opc_sll__xpr_general__xpr_general__x_0__
+t8: ch = ret t9, model/share/isa/isa.codal:2710:1
+    t9: ch = regop_write t0, Constant:i32<0>, t10, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:2709:5 ] ]
+        t0: ch = EntryToken
+        t5: i32 = Constant<0>
+        t10: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:176:51 @[ model/share/isa/isa.codal:2709:5 ] ]
+            t2: i32 = Constant<1>
+        t6: i1 = Constant<-1>
+
+i_rtype_alu__opc_sll__xpr_general__xpr_general__xpr_general__
+t11: ch = ret t12, model/share/isa/isa.codal:2722:1
+    t12: ch = regop_write t0, Constant:i32<0>, t6, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:2721:5 ] ]
+        t0: ch = EntryToken
+        t8: i32 = Constant<0>
+        t6: i32 = shl t14, t13, model/share/isa/isa.codal:193:106 @[ model/share/isa/isa.codal:2721:5 ]
+            t14: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:176:51 @[ model/share/isa/isa.codal:2721:5 ] ]
+                t2: i32 = Constant<1>
+            t13: i32 = regop_read Constant:i32<2>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:177:51 @[ model/share/isa/isa.codal:2721:5 ] ]
+                t4: i32 = Constant<2>
+        t9: i1 = Constant<-1>
+
+i_rtype_alu__opc_slt__x_0__x_0__x_0__
+t1: ch = ret t0, model/share/isa/isa.codal:2731:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_slt__x_0__x_0__xpr_general__
+t1: ch = ret t0, model/share/isa/isa.codal:2741:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_slt__x_0__xpr_general__x_0__
+t1: ch = ret t0, model/share/isa/isa.codal:2751:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_slt__x_0__xpr_general__xpr_general__
+t1: ch = ret t0, model/share/isa/isa.codal:2762:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_slt__xpr_general__x_0__x_0__
+t6: ch = ret t7, model/share/isa/isa.codal:2772:1
+    t7: ch = regop_write t0, Constant:i32<0>, Constant:i32<0>, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:2771:5 ] ]
+        t0: ch = EntryToken
+        t3: i32 = Constant<0>
+        t3: i32 = Constant<0>
+        t4: i1 = Constant<-1>
+
+i_rtype_alu__opc_slt__xpr_general__x_0__xpr_general__
+t11: ch = ret t12, model/share/isa/isa.codal:2783:1
+    t12: ch = regop_write t0, Constant:i32<0>, t7, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:2782:5 ] ]
+        t0: ch = EntryToken
+        t4: i32 = Constant<0>
+        t7: i32 = zero_extend t6, model/ia/other/ia_utils.codal:34:5 @[ model/share/isa/isa.codal:177:51 @[ model/share/isa/isa.codal:2782:5 ] ]
+            t6: i1 = setcc t13, Constant:i32<0>, setgt:ch, model/ia/other/ia_utils.codal:34:5 @[ model/share/isa/isa.codal:177:51 @[ model/share/isa/isa.codal:2782:5 ] ]
+                t13: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:177:51 @[ model/share/isa/isa.codal:2782:5 ] ]
+                    t2: i32 = Constant<1>
+                t4: i32 = Constant<0>
+                t5: ch = setgt
+        t9: i1 = Constant<-1>
+
+i_rtype_alu__opc_slt__xpr_general__xpr_general__x_0__
+t10: ch = ret t11, model/share/isa/isa.codal:2794:1
+    t11: ch = regop_write t0, Constant:i32<0>, t5, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:2793:5 ] ]
+        t0: ch = EntryToken
+        t7: i32 = Constant<0>
+        t5: i32 = srl t12, Constant:i32<31>, model/ia/other/ia_utils.codal:37:1 @[ model/share/isa/isa.codal:176:51 @[ model/share/isa/isa.codal:2793:5 ] ]
+            t12: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:176:51 @[ model/share/isa/isa.codal:2793:5 ] ]
+                t2: i32 = Constant<1>
+            t4: i32 = Constant<31>
+        t8: i1 = Constant<-1>
+
+i_rtype_alu__opc_slt__xpr_general__xpr_general__xpr_general__
+t13: ch = ret t14, model/share/isa/isa.codal:2806:1
+    t14: ch = regop_write t0, Constant:i32<0>, t8, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:2805:5 ] ]
+        t0: ch = EntryToken
+        t10: i32 = Constant<0>
+        t8: i32 = zero_extend t7
+            t7: i1 = setcc t16, t15, setlt:ch, model/share/isa/isa.codal:196:73 @[ model/share/isa/isa.codal:2805:5 ]
+                t16: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:176:51 @[ model/share/isa/isa.codal:2805:5 ] ]
+                    t2: i32 = Constant<1>
+                t15: i32 = regop_read Constant:i32<2>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:177:51 @[ model/share/isa/isa.codal:2805:5 ] ]
+                    t4: i32 = Constant<2>
+                t6: ch = setlt
+        t11: i1 = Constant<-1>
+
+i_rtype_alu__opc_sltu__x_0__x_0__x_0__
+t1: ch = ret t0, model/share/isa/isa.codal:2815:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_sltu__x_0__x_0__xpr_general__
+t1: ch = ret t0, model/share/isa/isa.codal:2825:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_sltu__x_0__xpr_general__x_0__
+t1: ch = ret t0, model/share/isa/isa.codal:2835:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_sltu__x_0__xpr_general__xpr_general__
+t1: ch = ret t0, model/share/isa/isa.codal:2846:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_sltu__xpr_general__x_0__x_0__
+t6: ch = ret t7, model/share/isa/isa.codal:2856:1
+    t7: ch = regop_write t0, Constant:i32<0>, Constant:i32<0>, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:2855:5 ] ]
+        t0: ch = EntryToken
+        t3: i32 = Constant<0>
+        t3: i32 = Constant<0>
+        t4: i1 = Constant<-1>
+
+i_rtype_alu__opc_sltu__xpr_general__x_0__xpr_general__
+t11: ch = ret t12, model/share/isa/isa.codal:2867:1
+    t12: ch = regop_write t0, Constant:i32<0>, t7, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:2866:5 ] ]
+        t0: ch = EntryToken
+        t4: i32 = Constant<0>
+        t7: i32 = zero_extend t6, model/ia/other/ia_utils.codal:34:5 @[ model/share/isa/isa.codal:177:51 @[ model/share/isa/isa.codal:2866:5 ] ]
+            t6: i1 = setcc t13, Constant:i32<0>, setne:ch, model/ia/other/ia_utils.codal:34:5 @[ model/share/isa/isa.codal:177:51 @[ model/share/isa/isa.codal:2866:5 ] ]
+                t13: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:177:51 @[ model/share/isa/isa.codal:2866:5 ] ]
+                    t2: i32 = Constant<1>
+                t4: i32 = Constant<0>
+                t5: ch = setne
+        t9: i1 = Constant<-1>
+
+i_rtype_alu__opc_sltu__xpr_general__xpr_general__x_0__
+t6: ch = ret t7, model/share/isa/isa.codal:2878:1
+    t7: ch = regop_write t0, Constant:i32<0>, Constant:i32<0>, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:2877:5 ] ]
+        t0: ch = EntryToken
+        t3: i32 = Constant<0>
+        t3: i32 = Constant<0>
+        t4: i1 = Constant<-1>
+
+i_rtype_alu__opc_sltu__xpr_general__xpr_general__xpr_general__
+t13: ch = ret t14, model/share/isa/isa.codal:2890:1
+    t14: ch = regop_write t0, Constant:i32<0>, t8, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:2889:5 ] ]
+        t0: ch = EntryToken
+        t10: i32 = Constant<0>
+        t8: i32 = zero_extend t7
+            t7: i1 = setcc t16, t15, setult:ch, model/share/isa/isa.codal:200:62 @[ model/share/isa/isa.codal:2889:5 ]
+                t16: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:176:51 @[ model/share/isa/isa.codal:2889:5 ] ]
+                    t2: i32 = Constant<1>
+                t15: i32 = regop_read Constant:i32<2>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:177:51 @[ model/share/isa/isa.codal:2889:5 ] ]
+                    t4: i32 = Constant<2>
+                t6: ch = setult
+        t11: i1 = Constant<-1>
+
+i_rtype_alu__opc_sra__x_0__x_0__x_0__
+t1: ch = ret t0, model/share/isa/isa.codal:2899:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_sra__x_0__x_0__xpr_general__
+t1: ch = ret t0, model/share/isa/isa.codal:2909:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_sra__x_0__xpr_general__x_0__
+t1: ch = ret t0, model/share/isa/isa.codal:2919:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_sra__x_0__xpr_general__xpr_general__
+t1: ch = ret t0, model/share/isa/isa.codal:2930:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_sra__xpr_general__x_0__x_0__
+t6: ch = ret t7, model/share/isa/isa.codal:2940:1
+    t7: ch = regop_write t0, Constant:i32<0>, Constant:i32<0>, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:2939:5 ] ]
+        t0: ch = EntryToken
+        t3: i32 = Constant<0>
+        t3: i32 = Constant<0>
+        t4: i1 = Constant<-1>
+
+i_rtype_alu__opc_sra__xpr_general__x_0__xpr_general__
+t6: ch = ret t7, model/share/isa/isa.codal:2951:1
+    t7: ch = regop_write t0, Constant:i32<0>, Constant:i32<0>, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:2950:5 ] ]
+        t0: ch = EntryToken
+        t3: i32 = Constant<0>
+        t3: i32 = Constant<0>
+        t4: i1 = Constant<-1>
+
+i_rtype_alu__opc_sra__xpr_general__xpr_general__x_0__
+t8: ch = ret t9, model/share/isa/isa.codal:2962:1
+    t9: ch = regop_write t0, Constant:i32<0>, t10, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:2961:5 ] ]
+        t0: ch = EntryToken
+        t5: i32 = Constant<0>
+        t10: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:176:51 @[ model/share/isa/isa.codal:2961:5 ] ]
+            t2: i32 = Constant<1>
+        t6: i1 = Constant<-1>
+
+i_rtype_alu__opc_sra__xpr_general__xpr_general__xpr_general__
+t13: ch = ret t14, model/share/isa/isa.codal:2974:1
+    t14: ch = regop_write t0, Constant:i32<0>, t8, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:2973:5 ] ]
+        t0: ch = EntryToken
+        t10: i32 = Constant<0>
+        t8: i32 = sra t16, t7, model/share/isa/isa.codal:210:115 @[ model/share/isa/isa.codal:2973:5 ]
+            t16: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:176:51 @[ model/share/isa/isa.codal:2973:5 ] ]
+                t2: i32 = Constant<1>
+            t7: i32 = and t15, Constant:i32<31>, model/ia/other/ia_utils.codal:34:5 @[ model/share/isa/isa.codal:177:51 @[ model/share/isa/isa.codal:2973:5 ] ]
+                t15: i32 = regop_read Constant:i32<2>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:177:51 @[ model/share/isa/isa.codal:2973:5 ] ]
+                    t4: i32 = Constant<2>
+                t6: i32 = Constant<31>
+        t11: i1 = Constant<-1>
+
+i_rtype_alu__opc_srl__x_0__x_0__x_0__
+t1: ch = ret t0, model/share/isa/isa.codal:2983:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_srl__x_0__x_0__xpr_general__
+t1: ch = ret t0, model/share/isa/isa.codal:2993:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_srl__x_0__xpr_general__x_0__
+t1: ch = ret t0, model/share/isa/isa.codal:3003:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_srl__x_0__xpr_general__xpr_general__
+t1: ch = ret t0, model/share/isa/isa.codal:3014:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_srl__xpr_general__x_0__x_0__
+t6: ch = ret t7, model/share/isa/isa.codal:3024:1
+    t7: ch = regop_write t0, Constant:i32<0>, Constant:i32<0>, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:3023:5 ] ]
+        t0: ch = EntryToken
+        t3: i32 = Constant<0>
+        t3: i32 = Constant<0>
+        t4: i1 = Constant<-1>
+
+i_rtype_alu__opc_srl__xpr_general__x_0__xpr_general__
+t6: ch = ret t7, model/share/isa/isa.codal:3035:1
+    t7: ch = regop_write t0, Constant:i32<0>, Constant:i32<0>, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:3034:5 ] ]
+        t0: ch = EntryToken
+        t3: i32 = Constant<0>
+        t3: i32 = Constant<0>
+        t4: i1 = Constant<-1>
+
+i_rtype_alu__opc_srl__xpr_general__xpr_general__x_0__
+t8: ch = ret t9, model/share/isa/isa.codal:3046:1
+    t9: ch = regop_write t0, Constant:i32<0>, t10, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:3045:5 ] ]
+        t0: ch = EntryToken
+        t5: i32 = Constant<0>
+        t10: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:176:51 @[ model/share/isa/isa.codal:3045:5 ] ]
+            t2: i32 = Constant<1>
+        t6: i1 = Constant<-1>
+
+i_rtype_alu__opc_srl__xpr_general__xpr_general__xpr_general__
+t13: ch = ret t14, model/share/isa/isa.codal:3058:1
+    t14: ch = regop_write t0, Constant:i32<0>, t8, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:3057:5 ] ]
+        t0: ch = EntryToken
+        t10: i32 = Constant<0>
+        t8: i32 = srl t16, t7, model/share/isa/isa.codal:207:106 @[ model/share/isa/isa.codal:3057:5 ]
+            t16: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:176:51 @[ model/share/isa/isa.codal:3057:5 ] ]
+                t2: i32 = Constant<1>
+            t7: i32 = and t15, Constant:i32<31>, model/ia/other/ia_utils.codal:34:5 @[ model/share/isa/isa.codal:177:51 @[ model/share/isa/isa.codal:3057:5 ] ]
+                t15: i32 = regop_read Constant:i32<2>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:177:51 @[ model/share/isa/isa.codal:3057:5 ] ]
+                    t4: i32 = Constant<2>
+                t6: i32 = Constant<31>
+        t11: i1 = Constant<-1>
+
+i_rtype_alu__opc_sub__x_0__x_0__x_0__
+t1: ch = ret t0, model/share/isa/isa.codal:3067:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_sub__x_0__x_0__xpr_general__
+t1: ch = ret t0, model/share/isa/isa.codal:3077:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_sub__x_0__xpr_general__x_0__
+t1: ch = ret t0, model/share/isa/isa.codal:3087:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_sub__x_0__xpr_general__xpr_general__
+t1: ch = ret t0, model/share/isa/isa.codal:3098:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_sub__xpr_general__x_0__x_0__
+t6: ch = ret t7, model/share/isa/isa.codal:3108:1
+    t7: ch = regop_write t0, Constant:i32<0>, Constant:i32<0>, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:3107:5 ] ]
+        t0: ch = EntryToken
+        t3: i32 = Constant<0>
+        t3: i32 = Constant<0>
+        t4: i1 = Constant<-1>
+
+i_rtype_alu__opc_sub__xpr_general__x_0__xpr_general__
+t9: ch = ret t10, model/share/isa/isa.codal:3119:1
+    t10: ch = regop_write t0, Constant:i32<0>, t5, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:3118:5 ] ]
+        t0: ch = EntryToken
+        t4: i32 = Constant<0>
+        t5: i32 = sub Constant:i32<0>, t11, model/ia/other/ia_utils.codal:37:1 @[ model/share/isa/isa.codal:177:51 @[ model/share/isa/isa.codal:3118:5 ] ]
+            t4: i32 = Constant<0>
+            t11: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:177:51 @[ model/share/isa/isa.codal:3118:5 ] ]
+                t2: i32 = Constant<1>
+        t7: i1 = Constant<-1>
+
+i_rtype_alu__opc_sub__xpr_general__xpr_general__x_0__
+t8: ch = ret t9, model/share/isa/isa.codal:3130:1
+    t9: ch = regop_write t0, Constant:i32<0>, t10, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:3129:5 ] ]
+        t0: ch = EntryToken
+        t5: i32 = Constant<0>
+        t10: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:176:51 @[ model/share/isa/isa.codal:3129:5 ] ]
+            t2: i32 = Constant<1>
+        t6: i1 = Constant<-1>
+
+i_rtype_alu__opc_sub__xpr_general__xpr_general__xpr_general__
+t11: ch = ret t12, model/share/isa/isa.codal:3142:1
+    t12: ch = regop_write t0, Constant:i32<0>, t6, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:3141:5 ] ]
+        t0: ch = EntryToken
+        t8: i32 = Constant<0>
+        t6: i32 = sub t14, t13, model/share/isa/isa.codal:190:106 @[ model/share/isa/isa.codal:3141:5 ]
+            t14: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:176:51 @[ model/share/isa/isa.codal:3141:5 ] ]
+                t2: i32 = Constant<1>
+            t13: i32 = regop_read Constant:i32<2>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:177:51 @[ model/share/isa/isa.codal:3141:5 ] ]
+                t4: i32 = Constant<2>
+        t9: i1 = Constant<-1>
+
+i_rtype_alu__opc_xor__x_0__x_0__x_0__
+t1: ch = ret t0, model/share/isa/isa.codal:3151:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_xor__x_0__x_0__xpr_general__
+t1: ch = ret t0, model/share/isa/isa.codal:3161:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_xor__x_0__xpr_general__x_0__
+t1: ch = ret t0, model/share/isa/isa.codal:3171:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_xor__x_0__xpr_general__xpr_general__
+t1: ch = ret t0, model/share/isa/isa.codal:3182:1
+    t0: ch = EntryToken
+
+i_rtype_alu__opc_xor__xpr_general__x_0__x_0__
+t6: ch = ret t7, model/share/isa/isa.codal:3192:1
+    t7: ch = regop_write t0, Constant:i32<0>, Constant:i32<0>, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:3191:5 ] ]
+        t0: ch = EntryToken
+        t3: i32 = Constant<0>
+        t3: i32 = Constant<0>
+        t4: i1 = Constant<-1>
+
+i_rtype_alu__opc_xor__xpr_general__x_0__xpr_general__
+t8: ch = ret t9, model/share/isa/isa.codal:3203:1
+    t9: ch = regop_write t0, Constant:i32<0>, t10, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:3202:5 ] ]
+        t0: ch = EntryToken
+        t5: i32 = Constant<0>
+        t10: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:177:51 @[ model/share/isa/isa.codal:3202:5 ] ]
+            t2: i32 = Constant<1>
+        t6: i1 = Constant<-1>
+
+i_rtype_alu__opc_xor__xpr_general__xpr_general__x_0__
+t8: ch = ret t9, model/share/isa/isa.codal:3214:1
+    t9: ch = regop_write t0, Constant:i32<0>, t10, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:3213:5 ] ]
+        t0: ch = EntryToken
+        t5: i32 = Constant<0>
+        t10: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:176:51 @[ model/share/isa/isa.codal:3213:5 ] ]
+            t2: i32 = Constant<1>
+        t6: i1 = Constant<-1>
+
+i_rtype_alu__opc_xor__xpr_general__xpr_general__xpr_general__
+t11: ch = ret t12, model/share/isa/isa.codal:3226:1
+    t12: ch = regop_write t0, Constant:i32<0>, t6, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:226:5 @[ model/share/isa/isa.codal:3225:5 ] ]
+        t0: ch = EntryToken
+        t8: i32 = Constant<0>
+        t6: i32 = xor t13, t14, model/share/isa/isa.codal:204:106 @[ model/share/isa/isa.codal:3225:5 ]
+            t13: i32 = regop_read Constant:i32<2>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:177:51 @[ model/share/isa/isa.codal:3225:5 ] ]
+                t4: i32 = Constant<2>
+            t14: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:176:51 @[ model/share/isa/isa.codal:3225:5 ] ]
+                t2: i32 = Constant<1>
+        t9: i1 = Constant<-1>
+
+i_rtype_shift__opc_slli__x_0__x_0__uimm5__
+t1: ch = ret t0, model/share/isa/isa.codal:3236:1
+    t0: ch = EntryToken
+
+i_rtype_shift__opc_slli__x_0__xpr_general__uimm5__
+t1: ch = ret t0, model/share/isa/isa.codal:3247:1
+    t0: ch = EntryToken
+
+i_rtype_shift__opc_slli__xpr_general__x_0__uimm5__
+t6: ch = ret t7, model/share/isa/isa.codal:3258:1
+    t7: ch = regop_write t0, Constant:i32<0>, Constant:i32<0>, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:269:5 @[ model/share/isa/isa.codal:3257:5 ] ]
+        t0: ch = EntryToken
+        t3: i32 = Constant<0>
+        t3: i32 = Constant<0>
+        t4: i1 = Constant<-1>
+
+i_rtype_shift__opc_slli__xpr_general__xpr_general__uimm5__
+t14: ch = ret t15, model/share/isa/isa.codal:3270:1
+    t15: ch = regop_write t0, Constant:i32<0>, t10, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:269:5 @[ model/share/isa/isa.codal:3269:5 ] ]
+        t0: ch = EntryToken
+        t8: i32 = Constant<0>
+        t10: i32 = shl t16, t9, model/share/isa/isa.codal:255:120 @[ model/share/isa/isa.codal:3269:5 ]
+            t16: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:250:53 @[ model/share/isa/isa.codal:3269:5 ] ]
+                t2: i32 = Constant<1>
+            t9: i32 = immop_read Constant:i32<2>, Constant:i1<0>, Constant:i32<5>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:968:12 @[ model/share/isa/isa.codal:3746:69 @[ model/share/isa/isa.codal:3268:17 ] ]
+                t5: i32 = Constant<2>
+                t6: i1 = Constant<0>
+                t7: i32 = Constant<5>
+                t8: i32 = Constant<0>
+                t8: i32 = Constant<0>
+        t12: i1 = Constant<-1>
+
+i_rtype_shift__opc_srai__x_0__x_0__uimm5__
+t1: ch = ret t0, model/share/isa/isa.codal:3280:1
+    t0: ch = EntryToken
+
+i_rtype_shift__opc_srai__x_0__xpr_general__uimm5__
+t1: ch = ret t0, model/share/isa/isa.codal:3291:1
+    t0: ch = EntryToken
+
+i_rtype_shift__opc_srai__xpr_general__x_0__uimm5__
+t6: ch = ret t7, model/share/isa/isa.codal:3302:1
+    t7: ch = regop_write t0, Constant:i32<0>, Constant:i32<0>, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:269:5 @[ model/share/isa/isa.codal:3301:5 ] ]
+        t0: ch = EntryToken
+        t3: i32 = Constant<0>
+        t3: i32 = Constant<0>
+        t4: i1 = Constant<-1>
+
+i_rtype_shift__opc_srai__xpr_general__xpr_general__uimm5__
+t14: ch = ret t15, model/share/isa/isa.codal:3314:1
+    t15: ch = regop_write t0, Constant:i32<0>, t10, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:269:5 @[ model/share/isa/isa.codal:3313:5 ] ]
+        t0: ch = EntryToken
+        t8: i32 = Constant<0>
+        t10: i32 = sra t16, t9, model/share/isa/isa.codal:261:121 @[ model/share/isa/isa.codal:3313:5 ]
+            t16: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:250:53 @[ model/share/isa/isa.codal:3313:5 ] ]
+                t2: i32 = Constant<1>
+            t9: i32 = immop_read Constant:i32<2>, Constant:i1<0>, Constant:i32<5>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:968:12 @[ model/share/isa/isa.codal:3746:69 @[ model/share/isa/isa.codal:3312:17 ] ]
+                t5: i32 = Constant<2>
+                t6: i1 = Constant<0>
+                t7: i32 = Constant<5>
+                t8: i32 = Constant<0>
+                t8: i32 = Constant<0>
+        t12: i1 = Constant<-1>
+
+i_rtype_shift__opc_srli__x_0__x_0__uimm5__
+t1: ch = ret t0, model/share/isa/isa.codal:3324:1
+    t0: ch = EntryToken
+
+i_rtype_shift__opc_srli__x_0__xpr_general__uimm5__
+t1: ch = ret t0, model/share/isa/isa.codal:3335:1
+    t0: ch = EntryToken
+
+i_rtype_shift__opc_srli__xpr_general__x_0__uimm5__
+t6: ch = ret t7, model/share/isa/isa.codal:3346:1
+    t7: ch = regop_write t0, Constant:i32<0>, Constant:i32<0>, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:269:5 @[ model/share/isa/isa.codal:3345:5 ] ]
+        t0: ch = EntryToken
+        t3: i32 = Constant<0>
+        t3: i32 = Constant<0>
+        t4: i1 = Constant<-1>
+
+i_rtype_shift__opc_srli__xpr_general__xpr_general__uimm5__
+t14: ch = ret t15, model/share/isa/isa.codal:3358:1
+    t15: ch = regop_write t0, Constant:i32<0>, t10, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:269:5 @[ model/share/isa/isa.codal:3357:5 ] ]
+        t0: ch = EntryToken
+        t8: i32 = Constant<0>
+        t10: i32 = srl t16, t9, model/share/isa/isa.codal:258:120 @[ model/share/isa/isa.codal:3357:5 ]
+            t16: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:250:53 @[ model/share/isa/isa.codal:3357:5 ] ]
+                t2: i32 = Constant<1>
+            t9: i32 = immop_read Constant:i32<2>, Constant:i1<0>, Constant:i32<5>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:968:12 @[ model/share/isa/isa.codal:3746:69 @[ model/share/isa/isa.codal:3356:17 ] ]
+                t5: i32 = Constant<2>
+                t6: i1 = Constant<0>
+                t7: i32 = Constant<5>
+                t8: i32 = Constant<0>
+                t8: i32 = Constant<0>
+        t12: i1 = Constant<-1>
+
+i_stype_store__opc_sb__x_0__simm12__x_0__
+t9: ch = ret t10, model/share/isa/isa.codal:3368:1
+    t10: ch = mem_write t0, Constant:i8<0>, t5, Constant:i32<0>, se_instrsem.c:353:34 @[ model/ia/other/ia_utils.codal:130:1 @[ model/share/isa/isa.codal:385:5 @[ model/share/isa/isa.codal:3367:5 ] ] ]
+        t0: ch = EntryToken
+        t7: i8 = Constant<0>
+        t5: i32 = immop_read Constant:i32<0>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:3365:18 ] ]
+            t2: i32 = Constant<0>
+            t3: i1 = Constant<-1>
+            t4: i32 = Constant<12>
+            t2: i32 = Constant<0>
+            t2: i32 = Constant<0>
+
+i_stype_store__opc_sb__x_0__simm12__xpr_general__
+t13: ch = ret t14, model/share/isa/isa.codal:3379:1
+    t14: ch = mem_write t0, Constant:i8<0>, t9, Constant:i32<0>, se_instrsem.c:353:34 @[ model/ia/other/ia_utils.codal:130:1 @[ model/share/isa/isa.codal:385:5 @[ model/share/isa/isa.codal:3378:5 ] ] ]
+        t0: ch = EntryToken
+        t11: i8 = Constant<0>
+        t9: i32 = add t15, t5, model/share/isa/isa.codal:383:118 @[ model/share/isa/isa.codal:3378:5 ]
+            t15: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:383:57 @[ model/share/isa/isa.codal:3378:5 ] ]
+                t7: i32 = Constant<1>
+            t5: i32 = immop_read Constant:i32<0>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:3375:18 ] ]
+                t2: i32 = Constant<0>
+                t3: i1 = Constant<-1>
+                t4: i32 = Constant<12>
+                t2: i32 = Constant<0>
+                t2: i32 = Constant<0>
+
+i_stype_store__opc_sb__xpr_general__simm12__x_0__
+t12: ch = ret t13, model/share/isa/isa.codal:3390:1
+    t13: ch = mem_write t0, t9, t6, Constant:i32<0>, se_instrsem.c:353:34 @[ model/ia/other/ia_utils.codal:130:1 @[ model/share/isa/isa.codal:385:5 @[ model/share/isa/isa.codal:3389:5 ] ] ]
+        t0: ch = EntryToken
+        t9: i8 = truncate t14, model/ia/other/ia_utils.codal:37:1 @[ model/share/isa/isa.codal:384:55 @[ model/share/isa/isa.codal:3389:5 ] ]
+            t14: i32 = regop_read Constant:i32<0>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:384:55 @[ model/share/isa/isa.codal:3389:5 ] ]
+                t5: i32 = Constant<0>
+        t6: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:3387:18 ] ]
+            t2: i32 = Constant<1>
+            t3: i1 = Constant<-1>
+            t4: i32 = Constant<12>
+            t5: i32 = Constant<0>
+            t5: i32 = Constant<0>
+
+i_stype_store__opc_sb__xpr_general__simm12__xpr_general__
+t15: ch = ret t16, model/share/isa/isa.codal:3402:1
+    t16: ch = mem_write t0, t12, t10, Constant:i32<0>, se_instrsem.c:353:34 @[ model/ia/other/ia_utils.codal:130:1 @[ model/share/isa/isa.codal:385:5 @[ model/share/isa/isa.codal:3401:5 ] ] ]
+        t0: ch = EntryToken
+        t12: i8 = truncate t18, model/ia/other/ia_utils.codal:34:5 @[ model/share/isa/isa.codal:384:55 @[ model/share/isa/isa.codal:3401:5 ] ]
+            t18: i32 = regop_read Constant:i32<0>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:384:55 @[ model/share/isa/isa.codal:3401:5 ] ]
+                t5: i32 = Constant<0>
+        t10: i32 = add t17, t6, model/share/isa/isa.codal:383:118 @[ model/share/isa/isa.codal:3401:5 ]
+            t17: i32 = regop_read Constant:i32<2>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:383:57 @[ model/share/isa/isa.codal:3401:5 ] ]
+                t8: i32 = Constant<2>
+            t6: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:3398:18 ] ]
+                t2: i32 = Constant<1>
+                t3: i1 = Constant<-1>
+                t4: i32 = Constant<12>
+                t5: i32 = Constant<0>
+                t5: i32 = Constant<0>
+
+i_stype_store__opc_sh__x_0__simm12__x_0__
+t9: ch = ret t10, model/share/isa/isa.codal:3412:1
+    t10: ch = mem_write t0, Constant:i16<0>, t5, Constant:i32<0>, se_instrsem.c:358:34 @[ model/ia/other/ia_utils.codal:130:1 @[ model/share/isa/isa.codal:385:5 @[ model/share/isa/isa.codal:3411:5 ] ] ]
+        t0: ch = EntryToken
+        t7: i16 = Constant<0>
+        t5: i32 = immop_read Constant:i32<0>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:3409:18 ] ]
+            t2: i32 = Constant<0>
+            t3: i1 = Constant<-1>
+            t4: i32 = Constant<12>
+            t2: i32 = Constant<0>
+            t2: i32 = Constant<0>
+
+i_stype_store__opc_sh__x_0__simm12__xpr_general__
+t13: ch = ret t14, model/share/isa/isa.codal:3423:1
+    t14: ch = mem_write t0, Constant:i16<0>, t9, Constant:i32<0>, se_instrsem.c:358:34 @[ model/ia/other/ia_utils.codal:130:1 @[ model/share/isa/isa.codal:385:5 @[ model/share/isa/isa.codal:3422:5 ] ] ]
+        t0: ch = EntryToken
+        t11: i16 = Constant<0>
+        t9: i32 = add t15, t5, model/share/isa/isa.codal:383:118 @[ model/share/isa/isa.codal:3422:5 ]
+            t15: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:383:57 @[ model/share/isa/isa.codal:3422:5 ] ]
+                t7: i32 = Constant<1>
+            t5: i32 = immop_read Constant:i32<0>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:3419:18 ] ]
+                t2: i32 = Constant<0>
+                t3: i1 = Constant<-1>
+                t4: i32 = Constant<12>
+                t2: i32 = Constant<0>
+                t2: i32 = Constant<0>
+
+i_stype_store__opc_sh__xpr_general__simm12__x_0__
+t12: ch = ret t13, model/share/isa/isa.codal:3434:1
+    t13: ch = mem_write t0, t9, t6, Constant:i32<0>, se_instrsem.c:358:34 @[ model/ia/other/ia_utils.codal:130:1 @[ model/share/isa/isa.codal:385:5 @[ model/share/isa/isa.codal:3433:5 ] ] ]
+        t0: ch = EntryToken
+        t9: i16 = truncate t14, model/ia/other/ia_utils.codal:37:1 @[ model/share/isa/isa.codal:384:55 @[ model/share/isa/isa.codal:3433:5 ] ]
+            t14: i32 = regop_read Constant:i32<0>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:384:55 @[ model/share/isa/isa.codal:3433:5 ] ]
+                t5: i32 = Constant<0>
+        t6: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:3431:18 ] ]
+            t2: i32 = Constant<1>
+            t3: i1 = Constant<-1>
+            t4: i32 = Constant<12>
+            t5: i32 = Constant<0>
+            t5: i32 = Constant<0>
+
+i_stype_store__opc_sh__xpr_general__simm12__xpr_general__
+t15: ch = ret t16, model/share/isa/isa.codal:3446:1
+    t16: ch = mem_write t0, t12, t10, Constant:i32<0>, se_instrsem.c:358:34 @[ model/ia/other/ia_utils.codal:130:1 @[ model/share/isa/isa.codal:385:5 @[ model/share/isa/isa.codal:3445:5 ] ] ]
+        t0: ch = EntryToken
+        t12: i16 = truncate t18, model/ia/other/ia_utils.codal:34:5 @[ model/share/isa/isa.codal:384:55 @[ model/share/isa/isa.codal:3445:5 ] ]
+            t18: i32 = regop_read Constant:i32<0>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:384:55 @[ model/share/isa/isa.codal:3445:5 ] ]
+                t5: i32 = Constant<0>
+        t10: i32 = add t17, t6, model/share/isa/isa.codal:383:118 @[ model/share/isa/isa.codal:3445:5 ]
+            t17: i32 = regop_read Constant:i32<2>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:383:57 @[ model/share/isa/isa.codal:3445:5 ] ]
+                t8: i32 = Constant<2>
+            t6: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:3442:18 ] ]
+                t2: i32 = Constant<1>
+                t3: i1 = Constant<-1>
+                t4: i32 = Constant<12>
+                t5: i32 = Constant<0>
+                t5: i32 = Constant<0>
+
+i_stype_store__opc_sw__x_0__simm12__x_0__
+t8: ch = ret t9, model/share/isa/isa.codal:3456:1
+    t9: ch = mem_write t0, Constant:i32<0>, t5, Constant:i32<0>, se_instrsem.c:368:34 @[ model/ia/other/ia_utils.codal:130:1 @[ model/share/isa/isa.codal:385:5 @[ model/share/isa/isa.codal:3455:5 ] ] ]
+        t0: ch = EntryToken
+        t2: i32 = Constant<0>
+        t5: i32 = immop_read Constant:i32<0>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:3453:18 ] ]
+            t2: i32 = Constant<0>
+            t3: i1 = Constant<-1>
+            t4: i32 = Constant<12>
+            t2: i32 = Constant<0>
+            t2: i32 = Constant<0>
+
+i_stype_store__opc_sw__x_0__simm12__xpr_general__
+t12: ch = ret t13, model/share/isa/isa.codal:3467:1
+    t13: ch = mem_write t0, Constant:i32<0>, t9, Constant:i32<0>, se_instrsem.c:368:34 @[ model/ia/other/ia_utils.codal:130:1 @[ model/share/isa/isa.codal:385:5 @[ model/share/isa/isa.codal:3466:5 ] ] ]
+        t0: ch = EntryToken
+        t2: i32 = Constant<0>
+        t9: i32 = add t14, t5, model/share/isa/isa.codal:383:118 @[ model/share/isa/isa.codal:3466:5 ]
+            t14: i32 = regop_read Constant:i32<1>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:383:57 @[ model/share/isa/isa.codal:3466:5 ] ]
+                t7: i32 = Constant<1>
+            t5: i32 = immop_read Constant:i32<0>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:3463:18 ] ]
+                t2: i32 = Constant<0>
+                t3: i1 = Constant<-1>
+                t4: i32 = Constant<12>
+                t2: i32 = Constant<0>
+                t2: i32 = Constant<0>
+
+i_stype_store__opc_sw__xpr_general__simm12__x_0__
+t11: ch = ret t12, model/share/isa/isa.codal:3478:1
+    t12: ch = mem_write t0, t13, t6, Constant:i32<0>, se_instrsem.c:368:34 @[ model/ia/other/ia_utils.codal:130:1 @[ model/share/isa/isa.codal:385:5 @[ model/share/isa/isa.codal:3477:5 ] ] ]
+        t0: ch = EntryToken
+        t13: i32 = regop_read Constant:i32<0>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:384:55 @[ model/share/isa/isa.codal:3477:5 ] ]
+            t5: i32 = Constant<0>
+        t6: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:3475:18 ] ]
+            t2: i32 = Constant<1>
+            t3: i1 = Constant<-1>
+            t4: i32 = Constant<12>
+            t5: i32 = Constant<0>
+            t5: i32 = Constant<0>
+
+i_stype_store__opc_sw__xpr_general__simm12__xpr_general__
+t14: ch = ret t15, model/share/isa/isa.codal:3490:1
+    t15: ch = mem_write t0, t17, t10, Constant:i32<0>, se_instrsem.c:368:34 @[ model/ia/other/ia_utils.codal:130:1 @[ model/share/isa/isa.codal:385:5 @[ model/share/isa/isa.codal:3489:5 ] ] ]
+        t0: ch = EntryToken
+        t17: i32 = regop_read Constant:i32<0>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:384:55 @[ model/share/isa/isa.codal:3489:5 ] ]
+            t5: i32 = Constant<0>
+        t10: i32 = add t16, t6, model/share/isa/isa.codal:383:118 @[ model/share/isa/isa.codal:3489:5 ]
+            t16: i32 = regop_read Constant:i32<2>, model/ia/other/ia_utils.codal:36:35 @[ model/share/isa/isa.codal:383:57 @[ model/share/isa/isa.codal:3489:5 ] ]
+                t8: i32 = Constant<2>
+            t6: i32 = immop_read Constant:i32<1>, Constant:i1<-1>, Constant:i32<12>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:973:12 @[ model/share/isa/isa.codal:3734:72 @[ model/share/isa/isa.codal:3486:18 ] ]
+                t2: i32 = Constant<1>
+                t3: i1 = Constant<-1>
+                t4: i32 = Constant<12>
+                t5: i32 = Constant<0>
+                t5: i32 = Constant<0>
+
+i_utype_ops__opc_auipc__x_0__uimm20__
+t1: ch = ret t0, model/share/isa/isa.codal:3499:1
+    t0: ch = EntryToken
+
+i_utype_ops__opc_auipc__xpr_general__uimm20__
+t16: ch = ret t19, model/share/isa/isa.codal:3509:1
+    t19: ch = regop_write t0, Constant:i32<0>, t18, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:433:13 @[ model/share/isa/isa.codal:3508:5 ] ]
+        t0: ch = EntryToken
+        t13: i32 = Constant<0>
+        t18: i32 = add t17, Constant:i32<-4>, model/share/isa/isa.codal:432:113 @[ model/share/isa/isa.codal:3508:5 ]
+            t17: i32 = add get_pc:i32, t10, model/share/isa/isa.codal:431:80 @[ model/share/isa/isa.codal:3508:5 ]
+                t20: i32 = get_pc, model/ia/other/ia_utils.codal:141:8 @[ model/share/isa/isa.codal:431:67 @[ model/share/isa/isa.codal:3508:5 ] ]
+                t10: i32 = immop_read Constant:i32<1>, Constant:i1<0>, Constant:i32<32>, Constant:i32<12>, Constant:i32<12>, model/share/isa/isa.codal:978:12 @[ model/share/isa/isa.codal:3740:72 @[ model/share/isa/isa.codal:3507:18 ] ]
+                    t6: i32 = Constant<1>
+                    t7: i1 = Constant<0>
+                    t8: i32 = Constant<32>
+                    t9: i32 = Constant<12>
+                    t9: i32 = Constant<12>
+            t3: i32 = Constant<-4>
+        t14: i1 = Constant<-1>
+
+i_utype_ops__opc_lui__x_0__uimm20__
+t1: ch = ret t0, model/share/isa/isa.codal:3518:1
+    t0: ch = EntryToken
+
+i_utype_ops__opc_lui__xpr_general__uimm20__
+t11: ch = ret t12, model/share/isa/isa.codal:3528:1
+    t12: ch = regop_write t0, Constant:i32<0>, t6, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:428:13 @[ model/share/isa/isa.codal:3527:5 ] ]
+        t0: ch = EntryToken
+        t8: i32 = Constant<0>
+        t6: i32 = immop_read Constant:i32<1>, Constant:i1<0>, Constant:i32<32>, Constant:i32<12>, Constant:i32<12>, model/share/isa/isa.codal:978:12 @[ model/share/isa/isa.codal:3740:72 @[ model/share/isa/isa.codal:3526:18 ] ]
+            t2: i32 = Constant<1>
+            t3: i1 = Constant<0>
+            t4: i32 = Constant<32>
+            t5: i32 = Constant<12>
+            t5: i32 = Constant<12>
+        t9: i1 = Constant<-1>
+
+e_movi32__
+t9: ch = ret t10, model/share/isa/isa.codal:1014:1
+    t10: ch = regop_write t0, Constant:i32<1>, t4, Constant:i1<-1>, model/ia/other/ia_utils.codal:48:40 @[ model/share/isa/isa.codal:1011:5 ]
+        t0: ch = EntryToken
+        t6: i32 = Constant<1>
+        t4: i32 = immop_read Constant:i32<0>, Constant:i32<0>, Constant:i32<32>, Constant:i32<0>, Constant:i32<0>, model/share/isa/isa.codal:3765:25
+            t2: i32 = Constant<0>
+            t2: i32 = Constant<0>
+            t3: i32 = Constant<32>
+            t2: i32 = Constant<0>
+            t2: i32 = Constant<0>
+        t7: i1 = Constant<-1>
+
+i_btype_branches__opc_bge__xpr_general__xpr_general__relative_addr12__swappedCmpClone0__
+t20: ch = ret t23
+    t23: ch = jump t0, t22, t9
+        t0: ch = EntryToken
+        t22: i32 = add t21, Constant:i32<-4>
+            t21: i32 = add get_pc:i32, t16
+                t24: i32 = get_pc
+                t16: i32 = immop_read Constant:i32<2>, Constant:i1<-1>, Constant:i32<13>, Constant:i32<1>, Constant:i32<0>
+                    t13: i32 = Constant<2>
+                    t14: i1 = Constant<-1>
+                    t15: i32 = Constant<13>
+                    t2: i32 = Constant<1>
+                    t3: i32 = Constant<0>
+            t10: i32 = Constant<-4>
+        t9: i1 = setcc t26, t25, setle:ch
+            t26: i32 = regop_read Constant:i32<1>
+                t2: i32 = Constant<1>
+            t25: i32 = regop_read Constant:i32<0>
+                t3: i32 = Constant<0>
+            t8: ch = setle
+
+i_btype_branches__opc_bgeu__xpr_general__xpr_general__relative_addr12__swappedCmpClone0__
+t20: ch = ret t23
+    t23: ch = jump t0, t22, t9
+        t0: ch = EntryToken
+        t22: i32 = add t21, Constant:i32<-4>
+            t21: i32 = add get_pc:i32, t16
+                t24: i32 = get_pc
+                t16: i32 = immop_read Constant:i32<2>, Constant:i1<-1>, Constant:i32<13>, Constant:i32<1>, Constant:i32<0>
+                    t13: i32 = Constant<2>
+                    t14: i1 = Constant<-1>
+                    t15: i32 = Constant<13>
+                    t2: i32 = Constant<1>
+                    t3: i32 = Constant<0>
+            t10: i32 = Constant<-4>
+        t9: i1 = setcc t26, t25, setule:ch
+            t26: i32 = regop_read Constant:i32<1>
+                t2: i32 = Constant<1>
+            t25: i32 = regop_read Constant:i32<0>
+                t3: i32 = Constant<0>
+            t8: ch = setule
+
+i_btype_branches__opc_blt__xpr_general__xpr_general__relative_addr12__swappedCmpClone0__
+t20: ch = ret t23
+    t23: ch = jump t0, t22, t9
+        t0: ch = EntryToken
+        t22: i32 = add t21, Constant:i32<-4>
+            t21: i32 = add get_pc:i32, t16
+                t24: i32 = get_pc
+                t16: i32 = immop_read Constant:i32<2>, Constant:i1<-1>, Constant:i32<13>, Constant:i32<1>, Constant:i32<0>
+                    t13: i32 = Constant<2>
+                    t14: i1 = Constant<-1>
+                    t15: i32 = Constant<13>
+                    t2: i32 = Constant<1>
+                    t3: i32 = Constant<0>
+            t10: i32 = Constant<-4>
+        t9: i1 = setcc t26, t25, setgt:ch
+            t26: i32 = regop_read Constant:i32<1>
+                t2: i32 = Constant<1>
+            t25: i32 = regop_read Constant:i32<0>
+                t3: i32 = Constant<0>
+            t8: ch = setgt
+
+i_btype_branches__opc_bltu__xpr_general__xpr_general__relative_addr12__swappedCmpClone0__
+t20: ch = ret t23
+    t23: ch = jump t0, t22, t9
+        t0: ch = EntryToken
+        t22: i32 = add t21, Constant:i32<-4>
+            t21: i32 = add get_pc:i32, t16
+                t24: i32 = get_pc
+                t16: i32 = immop_read Constant:i32<2>, Constant:i1<-1>, Constant:i32<13>, Constant:i32<1>, Constant:i32<0>
+                    t13: i32 = Constant<2>
+                    t14: i1 = Constant<-1>
+                    t15: i32 = Constant<13>
+                    t2: i32 = Constant<1>
+                    t3: i32 = Constant<0>
+            t10: i32 = Constant<-4>
+        t9: i1 = setcc t26, t25, setugt:ch
+            t26: i32 = regop_read Constant:i32<1>
+                t2: i32 = Constant<1>
+            t25: i32 = regop_read Constant:i32<0>
+                t3: i32 = Constant<0>
+            t8: ch = setugt
+
+i_itype_alu__opc_slti__xpr_general__x_0__simm12__immSpecClone__imm_1__1__
+t6: ch = ret t7
+    t7: ch = regop_write t0, Constant:i32<0>, Constant:i32<1>, Constant:i1<-1>
+        t0: ch = EntryToken
+        t3: i32 = Constant<0>
+        t2: i32 = Constant<1>
+        t4: i1 = Constant<-1>
+
+i_itype_alu__opc_slti__xpr_general__x_0__simm12__immSpecClone__imm_1__0__
+t6: ch = ret t7
+    t7: ch = regop_write t0, Constant:i32<0>, Constant:i32<0>, Constant:i1<-1>
+        t0: ch = EntryToken
+        t3: i32 = Constant<0>
+        t3: i32 = Constant<0>
+        t4: i1 = Constant<-1>
+
+i_itype_alu__opc_sltiu__xpr_general__x_0__simm12__immSpecClone__imm_1__1__
+t6: ch = ret t7
+    t7: ch = regop_write t0, Constant:i32<0>, Constant:i32<1>, Constant:i1<-1>
+        t0: ch = EntryToken
+        t3: i32 = Constant<0>
+        t2: i32 = Constant<1>
+        t4: i1 = Constant<-1>
+
+i_itype_alu__opc_sltiu__xpr_general__x_0__simm12__immSpecClone__imm_1__0__
+t6: ch = ret t7
+    t7: ch = regop_write t0, Constant:i32<0>, Constant:i32<0>, Constant:i1<-1>
+        t0: ch = EntryToken
+        t3: i32 = Constant<0>
+        t3: i32 = Constant<0>
+        t4: i1 = Constant<-1>
+
+i_rtype_alu__opc_slt__xpr_general__xpr_general__xpr_general__swappedCmpClone0__
+t13: ch = ret t14
+    t14: ch = regop_write t0, Constant:i32<0>, t8, Constant:i1<-1>
+        t0: ch = EntryToken
+        t10: i32 = Constant<0>
+        t8: i32 = zero_extend t7
+            t7: i1 = setcc t15, t16, setgt:ch
+                t15: i32 = regop_read Constant:i32<2>
+                    t4: i32 = Constant<2>
+                t16: i32 = regop_read Constant:i32<1>
+                    t2: i32 = Constant<1>
+                t6: ch = setgt
+        t11: i1 = Constant<-1>
+
+i_rtype_alu__opc_sltu__xpr_general__xpr_general__xpr_general__swappedCmpClone0__
+t13: ch = ret t14
+    t14: ch = regop_write t0, Constant:i32<0>, t8, Constant:i1<-1>
+        t0: ch = EntryToken
+        t10: i32 = Constant<0>
+        t8: i32 = zero_extend t7
+            t7: i1 = setcc t15, t16, setugt:ch
+                t15: i32 = regop_read Constant:i32<2>
+                    t4: i32 = Constant<2>
+                t16: i32 = regop_read Constant:i32<1>
+                    t2: i32 = Constant<1>
+                t6: ch = setugt
+        t11: i1 = Constant<-1>
+

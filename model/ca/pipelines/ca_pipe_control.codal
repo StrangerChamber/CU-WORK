@@ -32,6 +32,22 @@ event pipeline_control : pipeline(pipe.MEM)
     semantics
     {
 
+        if(s_me_take_branch == 1){
+            pipe.ID.clear();
+            pipe.EX.clear();
+            r_id_buffer_full = false;
+        }else if(s_me_stall == 1){
+            pipe.ID.stall();
+            pipe.EX.stall();
+            r_id_buffer_full = true;
+        }else if(s_id_loadhaz == true){
+            pipe.ID.stall();
+            pipe.EX.clear();
+            r_id_buffer_full = true;
+        }else{
+            r_id_buffer_full = false;
+        }
+        
     };
 };
 

@@ -1,0 +1,10 @@
+-- The CXX compiler identification is GNU 7.4.0
+-- Check for working CXX compiler: /contrib/bin/g++
+-- Check for working CXX compiler: /contrib/bin/g++ - works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/project/cu_riscv32i_cycle_accurate/work/tmp/tti

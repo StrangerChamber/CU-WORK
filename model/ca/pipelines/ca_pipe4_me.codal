@@ -30,15 +30,84 @@
 // -------------------------------------------------------------------------------------------------
 // Memory Stage
 // -------------------------------------------------------------------------------------------------
+
+
 event me : pipeline(pipe.MEM)
 {
+    use branch_logic;
     use me_output;
 
     semantics
     {
+        uint1 data_ready; 
+        uint1 data_response; 
+        uint32 decoded_data;
+        uint32 s_ex_load_data_output;
+
+        ldst.transport(CP_PHS_DATA, data_ready, data_response, s_ex_load_data_output, r_ex_memdat );
+
+        decoded_data = ldst.decode_data(s_ex_load_data_output,r_ex_alu_result, r_ex_mem_size);
+
+        switch(r_ex_mem_ops){
+            case MEM_LB:
+                s_me_memread_result = (int32)(int8) decoded_data;
+                break;
+            case MEM_LBU:
+                s_me_memread_result = (uint32)(uint8) decoded_data;
+                break;
+            case MEM_LH:
+                s_me_memread_result = (int32)(int16) decoded_data;
+                break;
+            case MEM_LHU:
+                s_me_memread_result = (uint32)(uint16) decoded_data;
+                break;
+            case MEM_LW:
+                s_me_memread_result = decoded_data;
+                break;
+            default:
+                s_me_memread_result = decoded_data;
+                break;
+        }
+
+        //this sets the signal to tell the rest we're stalling 
+        if((data_ready == false && data_response == false) && r_ex_mem_ops != MEM_NOP){
+            s_me_stall = true;
+        }else{
+            s_me_stall = false;
+        }   
+
+       branch_logic();
+
 
         // Update the pipeline registers between the Memory (MEM) and Write Back (WB) stages
         me_output();
+    };
+};
+
+event branch_logic : pipeline(pipe.MEM)
+{
+    semantics{
+        switch(r_ex_branchop){
+            case BRANCH_COND_TRUE:
+                s_me_take_branch = r_ex_zero;
+                break;
+            case BRANCH_COND_FALSE:
+                if(r_ex_zero == 0){
+                    s_me_take_branch = 1;
+                }else{
+                    s_me_take_branch = 0;
+                }
+                break;
+            case BRANCH_TRUE:
+                s_me_take_branch = 1;
+                break;
+            case BRANCH_FALSE:
+                s_me_take_branch = 0;
+                break;
+            default:
+                s_me_take_branch = 0;
+                break;
+        }
     };
 };
 
@@ -47,11 +116,13 @@ event me_output : pipeline(pipe.MEM)
     semantics
     {
         // ALU result from the EX pipeline register to pass along to the WB stage
-
-
+        
+        r_mem_data_result = r_ex_alu_result;
+        r_mem_memread = r_ex_memread;
+        r_mem_memdat = s_me_memread_result;
 
         // Passing control signals to the next stage, WB, through the MEM pipeline register
-        r_mem_rd          =
-        r_mem_regwrite    =
+        r_mem_rd          = r_ex_rd;
+        r_mem_regwrite    = r_ex_regwrite;
     };
 };

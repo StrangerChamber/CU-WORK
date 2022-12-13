@@ -1,0 +1,7 @@
+[1/4] Building CXX object CMakeFiles/codasip_tti.dir/llvm_CodasipTTIImpl.cpp.o
+[2/4] Building CXX object CMakeFiles/codasip_tti.dir/llvm_CodasipGenTTIImpl.cpp.o
+[3/4] Building CXX object CMakeFiles/codasip_tti.dir/CodasipTTI.cpp.o
+[4/4] Linking CXX shared module libcu_riscv32i_cycle_accurate-ia-tti.so
+[0/1] Install the project...
+-- Install configuration: "Release"
+-- Installing: /home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/bin/libcu_riscv32i_cycle_accurate-ia-tti.so

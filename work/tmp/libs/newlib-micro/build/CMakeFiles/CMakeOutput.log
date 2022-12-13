@@ -1,0 +1,136 @@
+The target system is: Linux -  - 
+The host system is: Linux - 5.4.209-116.367.amzn2.x86_64 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/bin/cu_riscv32i_cycle_accurate-ia-clang 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is Clang, found in "/home/project/cu_riscv32i_cycle_accurate/work/tmp/libs/newlib-micro/build/CMakeFiles/3.17.3/CompilerIdC/a.out"
+
+Checking whether the ASM compiler is Clang using "--version" matched "(clang version)":
+LLVM (http://llvm.org/):
+  LLVM version 9.0.1
+  Optimized build with assertions.
+  Default target: x86_64-unknown-linux-gnu
+  Host CPU: skylake-avx512
+
+  Registered Targets:
+    codasip   - Target generated for cu_riscv32i_cycle_accurate.ia.
+      Codasip Studio version: 9.1.1-1255
+      Licensee: Lockular Limited  (C60_2200_2176)
+      Project: cu_riscv32i_cycle_accurate.ia
+      Date: 2022-12-07 21:39:27
+      Copyright (C) 2022 Codasip s.r.o.
+    extractor - Target created for semantics extraction.
+clang version 9.0.1 (ssh://git@gitlab.codasip.com/codasip-studio/llvm-project.git d5357f0eec354bae21f33cf62e5504ff6d1cc93d)
+Target: codasip-cu_riscv32i_cycle_accurate_ia
+Thread model: posix
+InstalledDir: /home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/bin
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/project/cu_riscv32i_cycle_accurate/work/tmp/libs/newlib-micro/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/contrib/bin/ninja cmTC_f9bee && [1/2] Building C object CMakeFiles/cmTC_f9bee.dir/testCCompiler.c.o
+[2/2] Linking C static library libcmTC_f9bee.a
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/project/cu_riscv32i_cycle_accurate/work/tmp/libs/newlib-micro/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/contrib/bin/ninja cmTC_958dd && [1/2] Building C object CMakeFiles/cmTC_958dd.dir/CMakeCCompilerABI.c.o
+clang version 9.0.1 (ssh://git@gitlab.codasip.com/codasip-studio/llvm-project.git d5357f0eec354bae21f33cf62e5504ff6d1cc93d)
+Target: codasip-cu_riscv32i_cycle_accurate_ia
+Thread model: posix
+InstalledDir: /home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/bin
+LLVM (http://llvm.org/):
+  LLVM version 9.0.1
+  Optimized build with assertions.
+  Default target: x86_64-unknown-linux-gnu
+  Host CPU: skylake-avx512
+
+  Registered Targets:
+    codasip   - Target generated for cu_riscv32i_cycle_accurate.ia.
+      Codasip Studio version: 9.1.1-1255
+      Licensee: Lockular Limited  (C60_2200_2176)
+      Project: cu_riscv32i_cycle_accurate.ia
+      Date: 2022-12-07 21:39:27
+      Copyright (C) 2022 Codasip s.r.o.
+    extractor - Target created for semantics extraction.
+ "/home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/bin/cu_riscv32i_cycle_accurate-ia-clang" -cc1 -triple codasip-cu_riscv32i_cycle_accurate_ia -custom-datalayout=e-p:32:32:32-S64-a:0:32-v8:8:8-i8:8:8-v16:16:16-i16:16:16-f16:16:16-v32:32:32-i32:32:32-f32:32:32-v64:32:32-i64:32:32-f64:32:32-v128:32:32-i128:32:32-f128:32:32-v256:32:32-i256:32:32-v512:32:32-i512:32:32-v1024:32:32-i1024:32:32-v2048:32:32-i2048:32:32-n32@e-p:32:32:32-S64-a:0:32-v8:8:8-i8:8:8-v16:16:16-i16:16:16-f16:16:16-v32:32:32-i32:32:32-f32:32:32-v64:32:32-i64:32:32-f64:32:32-v128:32:32-i128:32:32-f128:32:32-v256:32:32-i256:32:32-v512:32:32-i512:32:32-v1024:32:32-i1024:32:32-v2048:32:32-i2048:32:32-n32@E-p:32:32:32-S64-a:0:32-v8:8:8-i8:8:8-v16:16:16-i16:16:16-f16:16:16-v32:32:32-i32:32:32-f32:32:32-v64:32:32-i64:32:32-f64:32:32-v128:32:32-i128:32:32-f128:32:32-v256:32:32-i256:32:32-v512:32:32-i512:32:32-v1024:32:32-i1024:32:32-v2048:32:32-i2048:32:32-n32 -allowed-clobbers=xpr_general@@x1@@ra@@x2@@sp@@x3@@gp@@x4@@tp@@x5@@t0@@x6@@t1@@x7@@t2@@x8@@fp@@s0@@x9@@s1@@x10@@a0@@x11@@a1@@x12@@a2@@x13@@a3@@x14@@a4@@x15@@a5@@x16@@a6@@x17@@a7@@x18@@s2@@x19@@s3@@x20@@s4@@x21@@s5@@x22@@s6@@x23@@s7@@x24@@s8@@x25@@s9@@x26@@s10@@x27@@s11@@x28@@t3@@x29@@t4@@x30@@t5@@x31@@t6@@rf_xpr_1@@rf_xpr_2@@rf_xpr_3@@rf_xpr_4@@rf_xpr_5@@rf_xpr_6@@rf_xpr_7@@rf_xpr_8@@rf_xpr_9@@rf_xpr_10@@rf_xpr_11@@rf_xpr_12@@rf_xpr_13@@rf_xpr_14@@rf_xpr_15@@rf_xpr_16@@rf_xpr_17@@rf_xpr_18@@rf_xpr_19@@rf_xpr_20@@rf_xpr_21@@rf_xpr_22@@rf_xpr_23@@rf_xpr_24@@rf_xpr_25@@rf_xpr_26@@rf_xpr_27@@rf_xpr_28@@rf_xpr_29@@rf_xpr_30@@rf_xpr_31@@rf_xpr_0@@rf_xpr_1@@rf_xpr_2@@rf_xpr_3@@rf_xpr_4@@rf_xpr_5@@rf_xpr_6@@rf_xpr_7@@rf_xpr_8@@rf_xpr_9@@rf_xpr_10@@rf_xpr_11@@rf_xpr_12@@rf_xpr_13@@rf_xpr_14@@rf_xpr_15@@rf_xpr_16@@rf_xpr_17@@rf_xpr_18@@rf_xpr_19@@rf_xpr_20@@rf_xpr_21@@rf_xpr_22@@rf_xpr_23@@rf_xpr_24@@rf_xpr_25@@rf_xpr_26@@rf_xpr_27@@rf_xpr_28@@rf_xpr_29@@rf_xpr_30@@rf_xpr_31@@ -ehdata-regs=10:11 -emit-llvm-bc -emit-llvm-uselists -disable-free -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mthread-model posix -fmath-errno -masm-verbose -mconstructor-aliases -dwarf-column-info -debugger-tuning=gdb -momit-leaf-frame-pointer -v -coverage-notes-file /home/project/cu_riscv32i_cycle_accurate/work/tmp/libs/newlib-micro/build/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_958dd.dir/CMakeCCompilerABI.c.gcno -resource-dir /home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/lib/clang/9.0.1 -D CODASIP_STUDIO_VERSION_MAJOR=9 -D CODASIP_STUDIO_VERSION_MINOR=1 -D CODASIP_STUDIO_VERSION_PATCH=1 -internal-externc-isystem /home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/bin/../libcxx/include/c++/v1 -internal-isystem /home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/lib/clang/9.0.1/include -nostdsysteminc -internal-externc-isystem /home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/bin/../newlib/include -internal-externc-isystem /home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/bin/../newlib-micro/include -internal-isystem /home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/bin/../include -fdebug-compilation-dir /home/project/cu_riscv32i_cycle_accurate/work/tmp/libs/newlib-micro/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -fobjc-runtime=gcc -fdwarf-exceptions -fdiagnostics-show-option -faddrsig -o /tmp/CMakeCCompilerABI-c25048.bc -x c /contrib/share/cmake-3.17/Modules/CMakeCCompilerABI.c
+clang -cc1 version 9.0.1 based upon LLVM 9.0.1 default target x86_64-unknown-linux-gnu
+ignoring nonexistent directory "/home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/bin/../libcxx/include/c++/v1"
+ignoring nonexistent directory "/home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/bin/../newlib-micro/include"
+ignoring duplicate directory "/home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/lib/clang/9.0.1/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/lib/clang/9.0.1/include
+ /home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/bin/../newlib/include
+ /home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/bin/../include
+End of search list.
+ "/home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/bin/cu_riscv32i_cycle_accurate-ia-llc" -O0 -use-ctors -o CMakeFiles/cmTC_958dd.dir/CMakeCCompilerABI.c.o -filetype=obj /tmp/CMakeCCompilerABI-c25048.bc -exception-model=dwarf
+[2/2] Linking C static library libcmTC_958dd.a
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/lib/clang/9.0.1/include]
+    add: [/home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/bin/../newlib/include]
+    add: [/home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/bin/../include]
+  end of search list found
+  collapse include dir [/home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/lib/clang/9.0.1/include] ==> [/home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/lib/clang/9.0.1/include]
+  collapse include dir [/home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/bin/../newlib/include] ==> [/home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/newlib/include]
+  collapse include dir [/home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/bin/../include] ==> [/home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/include]
+  implicit include dirs: [/home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/lib/clang/9.0.1/include;/home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/newlib/include;/home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(cu_riscv32i_cycle_accurate-ia-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/project/cu_riscv32i_cycle_accurate/work/tmp/libs/newlib-micro/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/contrib/bin/ninja cmTC_958dd && [1/2] Building C object CMakeFiles/cmTC_958dd.dir/CMakeCCompilerABI.c.o]
+  ignore line: [clang version 9.0.1 (ssh://git@gitlab.codasip.com/codasip-studio/llvm-project.git d5357f0eec354bae21f33cf62e5504ff6d1cc93d)]
+  ignore line: [Target: codasip-cu_riscv32i_cycle_accurate_ia]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/bin]
+  ignore line: [LLVM (http://llvm.org/):]
+  ignore line: [  LLVM version 9.0.1]
+  ignore line: [  Optimized build with assertions.]
+  ignore line: [  Default target: x86_64-unknown-linux-gnu]
+  ignore line: [  Host CPU: skylake-avx512]
+  ignore line: []
+  ignore line: [  Registered Targets:]
+  ignore line: [    codasip   - Target generated for cu_riscv32i_cycle_accurate.ia.]
+  ignore line: [      Codasip Studio version: 9.1.1-1255]
+  ignore line: [      Licensee: Lockular Limited  (C60_2200_2176)]
+  ignore line: [      Project: cu_riscv32i_cycle_accurate.ia]
+  ignore line: [      Date: 2022-12-07 21:39:27]
+  ignore line: [      Copyright (C) 2022 Codasip s.r.o.]
+  ignore line: [    extractor - Target created for semantics extraction.]
+  ignore line: [ "/home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/bin/cu_riscv32i_cycle_accurate-ia-clang" -cc1 -triple codasip-cu_riscv32i_cycle_accurate_ia -custom-datalayout=e-p:32:32:32-S64-a:0:32-v8:8:8-i8:8:8-v16:16:16-i16:16:16-f16:16:16-v32:32:32-i32:32:32-f32:32:32-v64:32:32-i64:32:32-f64:32:32-v128:32:32-i128:32:32-f128:32:32-v256:32:32-i256:32:32-v512:32:32-i512:32:32-v1024:32:32-i1024:32:32-v2048:32:32-i2048:32:32-n32@e-p:32:32:32-S64-a:0:32-v8:8:8-i8:8:8-v16:16:16-i16:16:16-f16:16:16-v32:32:32-i32:32:32-f32:32:32-v64:32:32-i64:32:32-f64:32:32-v128:32:32-i128:32:32-f128:32:32-v256:32:32-i256:32:32-v512:32:32-i512:32:32-v1024:32:32-i1024:32:32-v2048:32:32-i2048:32:32-n32@E-p:32:32:32-S64-a:0:32-v8:8:8-i8:8:8-v16:16:16-i16:16:16-f16:16:16-v32:32:32-i32:32:32-f32:32:32-v64:32:32-i64:32:32-f64:32:32-v128:32:32-i128:32:32-f128:32:32-v256:32:32-i256:32:32-v512:32:32-i512:32:32-v1024:32:32-i1024:32:32-v2048:32:32-i2048:32:32-n32 -allowed-clobbers=xpr_general@@x1@@ra@@x2@@sp@@x3@@gp@@x4@@tp@@x5@@t0@@x6@@t1@@x7@@t2@@x8@@fp@@s0@@x9@@s1@@x10@@a0@@x11@@a1@@x12@@a2@@x13@@a3@@x14@@a4@@x15@@a5@@x16@@a6@@x17@@a7@@x18@@s2@@x19@@s3@@x20@@s4@@x21@@s5@@x22@@s6@@x23@@s7@@x24@@s8@@x25@@s9@@x26@@s10@@x27@@s11@@x28@@t3@@x29@@t4@@x30@@t5@@x31@@t6@@rf_xpr_1@@rf_xpr_2@@rf_xpr_3@@rf_xpr_4@@rf_xpr_5@@rf_xpr_6@@rf_xpr_7@@rf_xpr_8@@rf_xpr_9@@rf_xpr_10@@rf_xpr_11@@rf_xpr_12@@rf_xpr_13@@rf_xpr_14@@rf_xpr_15@@rf_xpr_16@@rf_xpr_17@@rf_xpr_18@@rf_xpr_19@@rf_xpr_20@@rf_xpr_21@@rf_xpr_22@@rf_xpr_23@@rf_xpr_24@@rf_xpr_25@@rf_xpr_26@@rf_xpr_27@@rf_xpr_28@@rf_xpr_29@@rf_xpr_30@@rf_xpr_31@@rf_xpr_0@@rf_xpr_1@@rf_xpr_2@@rf_xpr_3@@rf_xpr_4@@rf_xpr_5@@rf_xpr_6@@rf_xpr_7@@rf_xpr_8@@rf_xpr_9@@rf_xpr_10@@rf_xpr_11@@rf_xpr_12@@rf_xpr_13@@rf_xpr_14@@rf_xpr_15@@rf_xpr_16@@rf_xpr_17@@rf_xpr_18@@rf_xpr_19@@rf_xpr_20@@rf_xpr_21@@rf_xpr_22@@rf_xpr_23@@rf_xpr_24@@rf_xpr_25@@rf_xpr_26@@rf_xpr_27@@rf_xpr_28@@rf_xpr_29@@rf_xpr_30@@rf_xpr_31@@ -ehdata-regs=10:11 -emit-llvm-bc -emit-llvm-uselists -disable-free -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mthread-model posix -fmath-errno -masm-verbose -mconstructor-aliases -dwarf-column-info -debugger-tuning=gdb -momit-leaf-frame-pointer -v -coverage-notes-file /home/project/cu_riscv32i_cycle_accurate/work/tmp/libs/newlib-micro/build/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_958dd.dir/CMakeCCompilerABI.c.gcno -resource-dir /home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/lib/clang/9.0.1 -D CODASIP_STUDIO_VERSION_MAJOR=9 -D CODASIP_STUDIO_VERSION_MINOR=1 -D CODASIP_STUDIO_VERSION_PATCH=1 -internal-externc-isystem /home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/bin/../libcxx/include/c++/v1 -internal-isystem /home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/lib/clang/9.0.1/include -nostdsysteminc -internal-externc-isystem /home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/bin/../newlib/include -internal-externc-isystem /home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/bin/../newlib-micro/include -internal-isystem /home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/bin/../include -fdebug-compilation-dir /home/project/cu_riscv32i_cycle_accurate/work/tmp/libs/newlib-micro/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -fobjc-runtime=gcc -fdwarf-exceptions -fdiagnostics-show-option -faddrsig -o /tmp/CMakeCCompilerABI-c25048.bc -x c /contrib/share/cmake-3.17/Modules/CMakeCCompilerABI.c]
+  ignore line: [clang -cc1 version 9.0.1 based upon LLVM 9.0.1 default target x86_64-unknown-linux-gnu]
+  ignore line: [ignoring nonexistent directory "/home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/bin/../libcxx/include/c++/v1"]
+  ignore line: [ignoring nonexistent directory "/home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/bin/../newlib-micro/include"]
+  ignore line: [ignoring duplicate directory "/home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/lib/clang/9.0.1/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/lib/clang/9.0.1/include]
+  ignore line: [ /home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/bin/../newlib/include]
+  ignore line: [ /home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/bin/../include]
+  ignore line: [End of search list.]
+  ignore line: [ "/home/project/cu_riscv32i_cycle_accurate/work/ia/sdk/bin/cu_riscv32i_cycle_accurate-ia-llc" -O0 -use-ctors -o CMakeFiles/cmTC_958dd.dir/CMakeCCompilerABI.c.o -filetype=obj /tmp/CMakeCCompilerABI-c25048.bc -exception-model=dwarf]
+  ignore line: [[2/2] Linking C static library libcmTC_958dd.a]
+  ignore line: []
+  ignore line: []
+  implicit libs: []
+  implicit dirs: []
+  implicit fwks: []
+
+
